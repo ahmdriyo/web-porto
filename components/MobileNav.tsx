@@ -33,7 +33,6 @@ const MobileNav = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
-    // Close the sheet when the route changes
     setIsOpen(false);
   }, [pathname]);
 
