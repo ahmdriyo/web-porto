@@ -21,7 +21,6 @@ const projects = [
     description:"Health Fit, Aplikasi Kosultasi kesehatan berbasis chat.",
     stack: [{ name: "React Native" }, { name: "Javascript" },{ name: "Expo" },  { name: "CSS" }, { name: "Firebasae" },{ name: "Res API" },{ name: "asyncstorage," },],
     image: "/assets/project/healthFit.png",
-    live: "/",
     github: "https://github.com/ahmdriyo/health.git",
   },
   {
@@ -31,7 +30,6 @@ const projects = [
       "Kalori Fit, Aplikasi penghitung dan pencatat asupan kalori harian.",
     stack: [ { name: "React Native" },{ name: "Javascript" }, { name: "Expo" }, { name: "CSS" }, { name: "CRUD" }, { name: "Data Json" }, { name: "Axios" }, { name: "asyncstorage,"},],
     image: "/assets/project/kaloriFit.png",
-    live: "/",
     github: "https://github.com/ahmdriyo/KaloriFit.git",
   },
   {
@@ -41,7 +39,6 @@ const projects = [
       "Aplikasi Kuis Tes Psikologi.",
     stack: [{ name: "React Native" },{ name: "Javascript" }, { name: "Expo" }, { name: "CSS" }, { name: "CRUD" }, { name: "Data Json" },],
     image: "/assets/project/kuis.png",
-    live: "/",
     github: "https://github.com/ahmdriyo/app-base.git",
   },
   {
@@ -51,7 +48,6 @@ const projects = [
       "Aplikasi Chat Saling bertukar pesan",
     stack: [{ name: "React Native" }, { name: "Javascript" },{ name: "Expo" },  { name: "CSS" }, { name: "Firebasae" }],
     image: "/assets/project/chatApp.png",
-    live: "/",
     github: "https://github.com/ahmdriyo/Firebase-Chat.git",
   },
   {
@@ -61,7 +57,6 @@ const projects = [
       "Website Events Bootcamp.",
     stack: [{ name: "Html" }, { name: "Css" }, { name: "Javascript" },  { name: "Tailwind" },{ name: "Next Js" }, { name: "Node Js" }],
     image: "/assets/project/webEvent.png",
-    live: "/",
     github: "https://github.com/ahmdriyo/landing-pages-web-event.git",
   },
   {
@@ -71,7 +66,6 @@ const projects = [
       "Website Admin Events Bootcamp",
     stack: [{ name: "Html" }, { name: "Css" }, { name: "Javascript" }, { name: "CRUD" },{ name: "React Bootstrap" },{ name: "React Js" }, { name: "Redux" }, { name: "Axios" }],
     image: "/assets/project/client.png",
-    live: "/",
     github: "https://github.com/ahmdriyo/administrator-client-web-event.git",
   },
   {
@@ -81,7 +75,6 @@ const projects = [
       "Website Replika dari WhatsApp Download ",
     stack: [{ name: "Html" }, { name: "Css" }, { name: "Javascript" }],
     image: "/assets/project/cloneWa.png",
-    live: "/",
     github: "https://github.com/ahmdriyo/wa-clone.git",
   },
   {
@@ -91,7 +84,6 @@ const projects = [
       "Website Portofolio sebelumnya",
     stack: [{ name: "Html" }, { name: "Css" }, { name: "Javascript" },  { name: "Tailwind" },{ name: "Next Js" }],
     image: "/assets/project/porto.png",
-    live: "/",
     github: "https://github.com/ahmdriyo/Porto_any.git",
   },
   {
@@ -101,7 +93,6 @@ const projects = [
       "Website Pemutar Musik",
     stack: [{ name: "Html" }, { name: "Css" }, { name: "Javascript" }],
     image: "/assets/project/musik.png",
-    live: "/",
     github: "https://github.com/ahmdriyo/pemutarMusik.git",
   },
 ];
@@ -144,18 +135,6 @@ const Project = () => {
               {/* border */}
               <div className="border border-white/20"></div>
               <div className=" flex items-center gap-4">
-                <Link href={project.live}>
-                  <TooltipProvider delayDuration={100}>
-                    <Tooltip>
-                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                        <BsArrowUpRight className="text-white text-3xl group-hover:text-accent" />
-                      </TooltipTrigger>
-                      <TooltipContent>
-                        <p>Live project</p>
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
-                </Link>
                 <Link href={project.github} target="_blank">
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
