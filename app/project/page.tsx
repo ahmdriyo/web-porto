@@ -122,7 +122,7 @@ const Project = () => {
                 {project.category}
               </h2>
               <p className="text-white/60">{project.description}</p>
-              <div className="gap-2 grid grid-cols-2">
+              <div className="gap-2 grid grid-cols-1 xl:grid-cols-2 md:grid-cols-2">
                 {project.stack.map((item, index) => {
                   return (
                     <li key={index} className="text-xl text-accent">
