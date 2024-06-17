@@ -11,7 +11,7 @@ const Header = () => {
             ahmd_riyo<span className=" text-accent">.</span>
           </h1>
         </Link>
-        <div className=" hidden xl:flex items-center gap-8">
+        <div className="hidden xl:flex items-center gap-8">
           <Nav />
           <Link href="/contact">
             <Button>Hire me</Button>

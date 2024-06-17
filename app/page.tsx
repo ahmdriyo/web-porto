@@ -23,14 +23,13 @@ const Home = () => {
               latest technological developments and apply my knowledge in real
               projects.{" "}
             </p>
-
             <div className="flex flex-col xl:flex-row items-center gap-8">
               <Button
                 variant="outline"
                 size="lg"
                 className=" uppercase flex items-center gap-2 border-2"
               >
-                <Link target="_blank" href="https://drive.google.com/file/d/105m6WXlrLZ56Xr5IBokEp0CjJn-moE5t/view?usp=sharing">Download CV</Link>
+                <Link target="_blank" href="https://drive.google.com/file/d/1THzlYPF1XtERN3JYIjWcI3DT6f26yY5i/view?usp=sharing">Download CV</Link>
                 <FiDownload className=" text-xl" />
               </Button>
               <div className="mb-8 xl:mb-0">
