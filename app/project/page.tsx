@@ -54,13 +54,33 @@ const projects = [
     num: "05",
     category: "Web App",
     description:
-      "Website Events Bootcamp.",
-    stack: [{ name: "Html" }, { name: "Css" }, { name: "Javascript" },  { name: "Tailwind" },{ name: "Next Js" }, { name: "Node Js" }],
-    image: "/assets/project/webEvent.png",
+      "Website Trayek Angkutan Umum.",
+    stack: [{ name: "Html" }, { name: "Css" }, { name: "Javascript" },  { name: "Tailwind" },{ name: "Next Js" }, { name: "Firebase" }],
+    image: "/assets/project/angkutan.png",
     github: "https://github.com/ahmdriyo/landing-pages-web-event.git",
   },
   {
     num: "06",
+    category: "Web App",
+    description:
+      "Website Trayek Kereta.",
+    stack: [{ name: "Html" }, { name: "Css" }, { name: "TypeScript" },  { name: "Tailwind" },{ name: "Next Js" }, { name: "Firebase" }],
+    image: "/assets/project/kereta.png",
+    github: "https://github.com/ahmdriyo/web-angkutan",
+    demo : "https://web-angkutan.vercel.app/"
+  },
+  {
+    num: "07",
+    category: "Web App",
+    description:
+      "Website Events Bootcamp.",
+    stack: [{ name: "Html" }, { name: "Css" }, { name: "TypeScript" },  { name: "Tailwind" },{ name: "Next Js" }, { name: "Node Js" }],
+    image: "/assets/project/webEvent.png",
+    github: "https://github.com/ahmdriyo/web-kereta.git",
+    demo: "https://web-kereta.vercel.app/kereta",
+  },
+  {
+    num: "08",
     category: "Web App",
     description:
       "Website Admin Events Bootcamp",
@@ -69,7 +89,7 @@ const projects = [
     github: "https://github.com/ahmdriyo/administrator-client-web-event.git",
   },
   {
-    num: "07",
+    num: "09",
     category: "Web App Clone",
     description:
       "Website Replika dari WhatsApp Download ",
@@ -78,7 +98,7 @@ const projects = [
     github: "https://github.com/ahmdriyo/wa-clone.git",
   },
   {
-    num: "08",
+    num: "10",
     category: "Web App",
     description:
       "Website Portofolio sebelumnya",
@@ -87,7 +107,7 @@ const projects = [
     github: "https://github.com/ahmdriyo/Porto_any.git",
   },
   {
-    num: "09",
+    num: "11",
     category: "Web App",
     description:
       "Website Pemutar Musik",
