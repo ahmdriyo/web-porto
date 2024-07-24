@@ -93,6 +93,7 @@ const projects = [
     ],
     image: "/assets/project/angkutan.png",
     github: "https://github.com/ahmdriyo/landing-pages-web-event.git",
+    demo: "https://web-angkutan.vercel.app/",
   },
   {
     num: "06",
@@ -108,7 +109,7 @@ const projects = [
     ],
     image: "/assets/project/kereta.png",
     github: "https://github.com/ahmdriyo/web-angkutan",
-    demo: "https://web-angkutan.vercel.app/",
+    demo: "https://web-kereta.vercel.app/",
   },
   {
     num: "07",
