@@ -83,6 +83,16 @@ const experience = {
       duration: "2024",
     },
     {
+      project : "Web Trayek Kereta",
+      position: "Web App",
+      duration: "2024",
+    },
+    {
+      project : "Web Trayek Angkutan",
+      position: "Web App",
+      duration: "2024",
+    },
+    {
       project : "Server Event Bootcamp",
       position: "BackEnd",
       duration: "2024",

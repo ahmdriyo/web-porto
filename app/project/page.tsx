@@ -13,13 +13,22 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import WorkSliderBtn from "@/components/WorkSliderBtn";
+import { FaLocationArrow } from "react-icons/fa";
 
 const projects = [
   {
     num: "01",
     category: "Mobile App",
-    description:"Health Fit, Aplikasi Kosultasi kesehatan berbasis chat.",
-    stack: [{ name: "React Native" }, { name: "Javascript" },{ name: "Expo" },  { name: "CSS" }, { name: "Firebasae" },{ name: "Res API" },{ name: "asyncstorage," },],
+    description: "Health Fit, Aplikasi Kosultasi kesehatan berbasis chat.",
+    stack: [
+      { name: "React Native" },
+      { name: "Javascript" },
+      { name: "Expo" },
+      { name: "CSS" },
+      { name: "Firebasae" },
+      { name: "Res API" },
+      { name: "asyncstorage," },
+    ],
     image: "/assets/project/healthFit.png",
     github: "https://github.com/ahmdriyo/health.git",
   },
@@ -28,53 +37,91 @@ const projects = [
     category: "Mobile App",
     description:
       "Kalori Fit, Aplikasi penghitung dan pencatat asupan kalori harian.",
-    stack: [ { name: "React Native" },{ name: "Javascript" }, { name: "Expo" }, { name: "CSS" }, { name: "CRUD" }, { name: "Data Json" }, { name: "Axios" }, { name: "asyncstorage,"},],
+    stack: [
+      { name: "React Native" },
+      { name: "Javascript" },
+      { name: "Expo" },
+      { name: "CSS" },
+      { name: "CRUD" },
+      { name: "Data Json" },
+      { name: "Axios" },
+      { name: "asyncstorage," },
+    ],
     image: "/assets/project/kaloriFit.png",
     github: "https://github.com/ahmdriyo/KaloriFit.git",
   },
   {
     num: "03",
     category: "Mobile App",
-    description:
-      "Aplikasi Kuis Tes Psikologi.",
-    stack: [{ name: "React Native" },{ name: "Javascript" }, { name: "Expo" }, { name: "CSS" }, { name: "CRUD" }, { name: "Data Json" },],
+    description: "Aplikasi Kuis Tes Psikologi.",
+    stack: [
+      { name: "React Native" },
+      { name: "Javascript" },
+      { name: "Expo" },
+      { name: "CSS" },
+      { name: "CRUD" },
+      { name: "Data Json" },
+    ],
     image: "/assets/project/kuis.png",
     github: "https://github.com/ahmdriyo/app-base.git",
   },
   {
     num: "04",
     category: "Mobile App",
-    description:
-      "Aplikasi Chat Saling bertukar pesan",
-    stack: [{ name: "React Native" }, { name: "Javascript" },{ name: "Expo" },  { name: "CSS" }, { name: "Firebasae" }],
+    description: "Aplikasi Chat Saling bertukar pesan",
+    stack: [
+      { name: "React Native" },
+      { name: "Javascript" },
+      { name: "Expo" },
+      { name: "CSS" },
+      { name: "Firebasae" },
+    ],
     image: "/assets/project/chatApp.png",
     github: "https://github.com/ahmdriyo/Firebase-Chat.git",
   },
   {
     num: "05",
     category: "Web App",
-    description:
-      "Website Trayek Angkutan Umum.",
-    stack: [{ name: "Html" }, { name: "Css" }, { name: "Javascript" },  { name: "Tailwind" },{ name: "Next Js" }, { name: "Firebase" }],
+    description: "Website Trayek Angkutan Umum.",
+    stack: [
+      { name: "Html" },
+      { name: "Css" },
+      { name: "Javascript" },
+      { name: "Tailwind" },
+      { name: "Next Js" },
+      { name: "Firebase" },
+    ],
     image: "/assets/project/angkutan.png",
     github: "https://github.com/ahmdriyo/landing-pages-web-event.git",
   },
   {
     num: "06",
     category: "Web App",
-    description:
-      "Website Trayek Kereta.",
-    stack: [{ name: "Html" }, { name: "Css" }, { name: "TypeScript" },  { name: "Tailwind" },{ name: "Next Js" }, { name: "Firebase" }],
+    description: "Website Trayek Kereta.",
+    stack: [
+      { name: "Html" },
+      { name: "Css" },
+      { name: "TypeScript" },
+      { name: "Tailwind" },
+      { name: "Next Js" },
+      { name: "Firebase" },
+    ],
     image: "/assets/project/kereta.png",
     github: "https://github.com/ahmdriyo/web-angkutan",
-    demo : "https://web-angkutan.vercel.app/"
+    demo: "https://web-angkutan.vercel.app/",
   },
   {
     num: "07",
     category: "Web App",
-    description:
-      "Website Events Bootcamp.",
-    stack: [{ name: "Html" }, { name: "Css" }, { name: "TypeScript" },  { name: "Tailwind" },{ name: "Next Js" }, { name: "Node Js" }],
+    description: "Website Events Bootcamp.",
+    stack: [
+      { name: "Html" },
+      { name: "Css" },
+      { name: "TypeScript" },
+      { name: "Tailwind" },
+      { name: "Next Js" },
+      { name: "Node Js" },
+    ],
     image: "/assets/project/webEvent.png",
     github: "https://github.com/ahmdriyo/web-kereta.git",
     demo: "https://web-kereta.vercel.app/kereta",
@@ -82,17 +129,24 @@ const projects = [
   {
     num: "08",
     category: "Web App",
-    description:
-      "Website Admin Events Bootcamp",
-    stack: [{ name: "Html" }, { name: "Css" }, { name: "Javascript" }, { name: "CRUD" },{ name: "React Bootstrap" },{ name: "React Js" }, { name: "Redux" }, { name: "Axios" }],
+    description: "Website Admin Events Bootcamp",
+    stack: [
+      { name: "Html" },
+      { name: "Css" },
+      { name: "Javascript" },
+      { name: "CRUD" },
+      { name: "React Bootstrap" },
+      { name: "React Js" },
+      { name: "Redux" },
+      { name: "Axios" },
+    ],
     image: "/assets/project/client.png",
     github: "https://github.com/ahmdriyo/administrator-client-web-event.git",
   },
   {
     num: "09",
     category: "Web App Clone",
-    description:
-      "Website Replika dari WhatsApp Download ",
+    description: "Website Replika dari WhatsApp Download ",
     stack: [{ name: "Html" }, { name: "Css" }, { name: "Javascript" }],
     image: "/assets/project/cloneWa.png",
     github: "https://github.com/ahmdriyo/wa-clone.git",
@@ -100,17 +154,21 @@ const projects = [
   {
     num: "10",
     category: "Web App",
-    description:
-      "Website Portofolio sebelumnya",
-    stack: [{ name: "Html" }, { name: "Css" }, { name: "Javascript" },  { name: "Tailwind" },{ name: "Next Js" }],
+    description: "Website Portofolio sebelumnya",
+    stack: [
+      { name: "Html" },
+      { name: "Css" },
+      { name: "Javascript" },
+      { name: "Tailwind" },
+      { name: "Next Js" },
+    ],
     image: "/assets/project/porto.png",
     github: "https://github.com/ahmdriyo/Porto_any.git",
   },
   {
     num: "11",
     category: "Web App",
-    description:
-      "Website Pemutar Musik",
+    description: "Website Pemutar Musik",
     stack: [{ name: "Html" }, { name: "Css" }, { name: "Javascript" }],
     image: "/assets/project/musik.png",
     github: "https://github.com/ahmdriyo/pemutarMusik.git",
@@ -167,6 +225,20 @@ const Project = () => {
                     </Tooltip>
                   </TooltipProvider>
                 </Link>
+                {project.demo && (
+                  <Link href={project.demo} target="_blank">
+                    <TooltipProvider delayDuration={100}>
+                      <Tooltip>
+                        <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
+                          <FaLocationArrow className="text-white text-3xl group-hover:text-accent" />
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p>Demo Web</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                  </Link>
+                )}
               </div>
             </div>
           </div>
@@ -200,7 +272,6 @@ const Project = () => {
                 containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none"
                 btnStyles="bg-accent hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all"
               />
-
             </Swiper>
           </div>
         </div>
