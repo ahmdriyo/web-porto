@@ -93,6 +93,11 @@ const experience = {
       duration: "2024",
     },
     {
+      project : "Web GIS Kampus di Barito Kuala",
+      position: "Web App",
+      duration: "2024",
+    },
+    {
       project : "Server Event Bootcamp",
       position: "BackEnd",
       duration: "2024",

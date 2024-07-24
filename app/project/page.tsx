@@ -68,7 +68,7 @@ const projects = [
   {
     num: "04",
     category: "Mobile App",
-    description: "Aplikasi Chat Saling bertukar pesan",
+    description: "Aplikasi Chat Saling bertukar pesan.",
     stack: [
       { name: "React Native" },
       { name: "Javascript" },
@@ -92,11 +92,28 @@ const projects = [
       { name: "Firebase" },
     ],
     image: "/assets/project/angkutan.png",
-    github: "https://github.com/ahmdriyo/landing-pages-web-event.git",
+    github: "https://github.com/ahmdriyo/web-angkutan.git",
     demo: "https://web-angkutan.vercel.app/",
   },
   {
     num: "06",
+    category: "Web App",
+    description: "Web GIS Kampus di Barito Kuala.",
+    stack: [
+      { name: "Html" },
+      { name: "Css" },
+      { name: "Javascript" },
+      { name: "React Js" },
+      { name: "Firebase" },
+      { name: "Openstreetmap" },
+      { name: "Leaflet" },
+    ],
+    image: "/assets/project/gis.png",
+    github: "https://github.com/ahmdriyo/web_sig_baritokuala.git",
+    demo: "https://web-gis-kampusbaritokuala.vercel.app/",
+  },
+  {
+    num: "07",
     category: "Web App",
     description: "Website Trayek Kereta.",
     stack: [
@@ -112,7 +129,7 @@ const projects = [
     demo: "https://web-kereta.vercel.app/",
   },
   {
-    num: "07",
+    num: "08",
     category: "Web App",
     description: "Website Events Bootcamp.",
     stack: [
@@ -128,9 +145,9 @@ const projects = [
     demo: "https://web-kereta.vercel.app/kereta",
   },
   {
-    num: "08",
+    num: "09",
     category: "Web App",
-    description: "Website Admin Events Bootcamp",
+    description: "Website Admin Events Bootcamp.",
     stack: [
       { name: "Html" },
       { name: "Css" },
@@ -145,17 +162,17 @@ const projects = [
     github: "https://github.com/ahmdriyo/administrator-client-web-event.git",
   },
   {
-    num: "09",
+    num: "10",
     category: "Web App Clone",
-    description: "Website Replika dari WhatsApp Download ",
+    description: "Website Replika dari WhatsApp Download. ",
     stack: [{ name: "Html" }, { name: "Css" }, { name: "Javascript" }],
     image: "/assets/project/cloneWa.png",
     github: "https://github.com/ahmdriyo/wa-clone.git",
   },
   {
-    num: "10",
+    num: "11",
     category: "Web App",
-    description: "Website Portofolio sebelumnya",
+    description: "Website Portofolio sebelumnya.",
     stack: [
       { name: "Html" },
       { name: "Css" },
@@ -167,9 +184,9 @@ const projects = [
     github: "https://github.com/ahmdriyo/Porto_any.git",
   },
   {
-    num: "11",
+    num: "12",
     category: "Web App",
-    description: "Website Pemutar Musik",
+    description: "Website Pemutar Musik.",
     stack: [{ name: "Html" }, { name: "Css" }, { name: "Javascript" }],
     image: "/assets/project/musik.png",
     github: "https://github.com/ahmdriyo/pemutarMusik.git",
