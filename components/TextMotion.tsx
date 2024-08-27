@@ -14,7 +14,7 @@ const TextMotion = () => (
       visible: {
         opacity: 1,
         transition: {
-          delayChildren: 2.4,
+          delayChildren: 0,
           staggerChildren: 0.08, 
           duration: 0.5,
           ease: "easeIn",

@@ -7,7 +7,7 @@ const TextDetail = () => {
       initial={{ opacity: 0 }}
       animate={{
         opacity: 1,
-        transition: { delay: 4.4, duration: 0.5, ease: "easeIn" },
+        transition: { delay: 2.4, duration: 0.5, ease: "easeIn" },
       }}
     >
       <span className="text-xl">Web Developer & Mobile Developer</span>

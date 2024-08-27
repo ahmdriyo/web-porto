@@ -3,10 +3,11 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import emailjs from 'emailjs-com';
-import { motion } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
 
 import { FaEnvelope, FaMapMarkedAlt, FaPhoneAlt } from "react-icons/fa";
-import { useState } from "react";
+import React, { useState } from "react";
+import { useInView } from "react-intersection-observer";
 
 const info = [
   {
@@ -28,8 +29,7 @@ const info = [
 ];
 
 
-const Contact = () => {
-
+const ContactPage = () => {
   const [formData, setFormData] = useState({
     firstname: '',
     lastname: '',
@@ -66,14 +66,24 @@ const Contact = () => {
   
     
   };
+  const controls = useAnimation();
+  const [ref, inView] = useInView({
+    triggerOnce: true, // Memastikan animasi hanya berjalan sekali
+    threshold: 0.3,    // Memulai animasi saat 10% dari elemen masuk ke tampilan layar
+  });
+
+  React.useEffect(() => {
+    if (inView) {
+      controls.start({ opacity: 1, x: 0 });
+    }
+  }, [controls, inView]);
   return (
-    <motion.section
-      initial={{ opacity: 0 }}
-      animate={{
-        opacity: 1,
-        transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
-      }}
-      className="py-6"
+    <motion.div
+      ref={ref}
+      initial={{ opacity: 0, x: -50 }}  
+      animate={controls}                
+      transition={{ delay: 0.2, duration: 0.6, ease: "easeInOut" }}
+      className="py-6 mt-10"
     >
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-[30px]">
@@ -149,7 +159,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </motion.section>
+    </motion.div>
   );
 };
-export default Contact;
+export default ContactPage;

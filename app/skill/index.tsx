@@ -3,7 +3,7 @@
 import { IoIosDesktop, IoIosRocket } from "react-icons/io";
 import { IoPhonePortraitOutline } from "react-icons/io5";
 import { MdDesignServices } from "react-icons/md";
-import Link from "next/link";
+import React from "react";
 
 const services = [
   {
@@ -29,24 +29,43 @@ const services = [
   },
 ];
 
-import { motion } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+const SkillPage = () => {
+  const controls = useAnimation();
+  const [ref, inView] = useInView({
+    triggerOnce: true, // Memastikan animasi hanya berjalan sekali
+    threshold: 0.3,    // Memulai animasi saat 10% dari elemen masuk ke tampilan layar
+  });
 
-const Skill = () => {
+  React.useEffect(() => {
+    if (inView) {
+      controls.start({ opacity: 1, x: 0 });
+    }
+  }, [controls, inView]);
   return (
-    <section className="min-h-[80vh] flex flex-col justify-center py-12 xl:py-0">
-      <div className="container mx-auto">
+    <section ref={ref} className="min-h-[80vh] flex flex-col justify-center py-12 xl:py-0 mt-20">
+      <div className="container mx-auto mt-5">
         <motion.div
-          initial={{ opacity: 0 }}
-          animate={{
-            opacity: 1,
-            transition: { delay: 0.5, duration: 0.4, ease: "easeIn" },
+          initial={{ opacity: 0, x: -50 }}
+          animate={controls}
+          transition={{
+            duration: 0.5,
+            ease: "easeOut",
           }}
           className="grid grid-cols-1 md:grid-cols-2 gap-[60px]"
         >
           {services.map((service, index) => (
-            <div
+            <motion.div
               key={index}
-              className="flex-1 flex flex-col justify-center gap-6 group"
+              initial={{ opacity: 0, x: -50 }}
+              animate={controls}
+              transition={{
+                duration: 0.5,
+                delay: index * 0.3,
+                ease: "easeOut",
+              }}
+              className="flex-1 flex flex-col justify-center gap-6 group bg-[#202026] p-5 rounded-xl"
             >
               <div className="w-full flex justify-between items-center">
                 <div className="text-5xl font-extrabold hover:text-accent">
@@ -56,12 +75,12 @@ const Skill = () => {
                   {service.icon}
                 </div>
               </div>
-              <h2 className="text-[42px] font-bold leading-none text-whitegroup-hover:text-accent transition-all duration-500">
+              <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500">
                 {service.title}
               </h2>
               <p className="text-white/60">{service.description}</p>
               <div className="border-b border-white/20 w-full"></div>
-            </div>
+            </motion.div>
           ))}
         </motion.div>
       </div>
@@ -69,4 +88,4 @@ const Skill = () => {
   );
 };
 
-export default Skill;
+export default SkillPage;

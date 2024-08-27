@@ -14,7 +14,8 @@ import Link from "next/link";
 import Image from "next/image";
 import WorkSliderBtn from "@/components/WorkSliderBtn";
 import { FaLocationArrow } from "react-icons/fa";
-
+import { useInView } from "react-intersection-observer";
+import {  useAnimation } from "framer-motion";
 const projects = [
   {
     num: "01",
@@ -192,19 +193,29 @@ const projects = [
     github: "https://github.com/ahmdriyo/pemutarMusik.git",
   },
 ];
-const Project = () => {
+const ProjectPage = () => {
   const [project, setProject] = useState(projects[0]);
   const handleSlideChange = (swiper: any) => {
     const currentIndex = swiper.activeIndex;
     setProject(projects[currentIndex]);
   };
+  const controls = useAnimation();
+  const [ref, inView] = useInView({
+    triggerOnce: true, 
+    threshold: 0.3,    
+  });
+
+  React.useEffect(() => {
+    if (inView) {
+      controls.start({ opacity: 1, x: 0 });
+    }
+  }, [controls, inView]);
   return (
-    <motion.section
-      initial={{ opacity: 0 }}
-      animate={{
-        opacity: 1,
-        transition: { delay: 0.4, duration: 0.5, ease: "easeIn" },
-      }}
+    <motion.div
+      ref={ref}
+      initial={{ opacity: 0, x: -50 }}
+      animate={controls}               
+      transition={{ delay: 0.2, duration: 0.6, ease: "easeInOut" }}
       className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0"
     >
       <div className="container mx-auto">
@@ -294,8 +305,8 @@ const Project = () => {
           </div>
         </div>
       </div>
-    </motion.section>
+    </motion.div>
   );
 };
 
-export default Project;
+export default ProjectPage;

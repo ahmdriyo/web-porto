@@ -1,33 +1,8 @@
 "use client";
 
-import {
-  FaHtml5,
-  FaCss3,
-  FaJs,
-  FaReact,
-  FaFigma,
-  FaNodeJs,
-  FaGitAlt,
-} from "react-icons/fa";
-import {
-  SiNextdotjs,
-  SiTailwindcss,
-  SiMongodb,
-  SiMysql,
-  SiFirebase,
-  SiTypescript,
-} from "react-icons/si";
-import { TbBrandReactNative } from "react-icons/tb";
 import { motion } from "framer-motion";
-import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
-import {
-  Tooltip,
-  TooltipProvider,
-  TooltipContent,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
+import { TabsContent } from "@/components/ui/tabs";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import AboutTabsContent from "./about";
 
 const experience = {
   icon: "/assets/profile.png",
@@ -136,7 +111,10 @@ const ExperienceTabsContent = () => {
           {experience.items.map((item, index) => {
             return (
               <motion.li
-                whileHover={{ rotate: 3, boxShadow: "0px 10px 30px rgba(0, 0, 0, 0.2)" }}
+                whileHover={{
+                  rotate: 3,
+                  boxShadow: "0px 10px 30px rgba(0, 0, 0, 0.2)",
+                }}
                 transition={{ duration: 0.3 }}
                 key={index}
                 variants={itembar}
