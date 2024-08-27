@@ -8,9 +8,6 @@ const Header = () => {
         <div className="flex items-center gap-8">
           <Nyoba />
         </div>
-        {/* <div className="xl:hidden flex flex-1 justify-end items-end">
-          <MobileNav />
-        </div> */}
       </div>
     </header>
   );
