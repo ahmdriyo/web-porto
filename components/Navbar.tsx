@@ -7,7 +7,7 @@ interface Position {
   opacity: number;
 }
 
-const Nyoba: React.FC = () => {
+const Navbar: React.FC = () => {
   return (
     <div className="py-1">
       <SlideTabs />
@@ -15,7 +15,7 @@ const Nyoba: React.FC = () => {
   );
 };
 
-export default Nyoba;
+export default Navbar;
 
 const SlideTabs: React.FC = () => {
   const [position, setPosition] = useState<Position>({

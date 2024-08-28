@@ -68,8 +68,8 @@ const ContactPage = () => {
   };
   const controls = useAnimation();
   const [ref, inView] = useInView({
-    triggerOnce: true, // Memastikan animasi hanya berjalan sekali
-    threshold: 0.3,    // Memulai animasi saat 10% dari elemen masuk ke tampilan layar
+    triggerOnce: true, 
+    threshold: 0.3,    
   });
 
   React.useEffect(() => {

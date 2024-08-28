@@ -11,8 +11,8 @@ import { motion, useAnimation } from "framer-motion";
 const ResumePage = () => {
   const controls = useAnimation();
   const [ref, inView] = useInView({
-    triggerOnce: true, // Memastikan animasi hanya berjalan sekali
-    threshold: 0.3,    // Memulai animasi saat 10% dari elemen masuk ke tampilan layar
+    triggerOnce: true,
+    threshold: 0.3,    
   });
 
   React.useEffect(() => {
@@ -24,8 +24,8 @@ const ResumePage = () => {
   return (
     <motion.div
       ref={ref}
-      initial={{ opacity: 0, x: -50 }}  // Mulai dari opacity 0 dan sedikit di kiri
-      animate={controls}                // Animasi dikontrol oleh `controls`
+      initial={{ opacity: 0, x: -50 }}  
+      animate={controls}                
       transition={{ delay: 0.2, duration: 0.6, ease: "easeInOut" }}
       className="min-h-[81vh] flex items-center justify-center py-12 xl:py-0 t-24 mb-20"
     >

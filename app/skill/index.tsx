@@ -1,6 +1,6 @@
 "use client";
 
-import { IoIosDesktop, IoIosRocket } from "react-icons/io";
+import { IoIosDesktop } from "react-icons/io";
 import { IoPhonePortraitOutline } from "react-icons/io5";
 import { MdDesignServices } from "react-icons/md";
 import React from "react";
@@ -34,8 +34,8 @@ import { useInView } from "react-intersection-observer";
 const SkillPage = () => {
   const controls = useAnimation();
   const [ref, inView] = useInView({
-    triggerOnce: true, // Memastikan animasi hanya berjalan sekali
-    threshold: 0.3,    // Memulai animasi saat 10% dari elemen masuk ke tampilan layar
+    triggerOnce: true, 
+    threshold: 0.3,   
   });
 
   React.useEffect(() => {

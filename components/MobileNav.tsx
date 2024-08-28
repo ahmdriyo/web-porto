@@ -19,14 +19,13 @@ const MobileNav = () => {
   }, []);
 
   const handleLinkClick = (event: React.MouseEvent<HTMLAnchorElement>, path: string) => {
-    event.preventDefault(); // Mencegah perilaku default browser
+    event.preventDefault();
     const targetId = path.replace("#", "");
     const targetElement = document.getElementById(targetId);
     if (targetElement) {
       targetElement.scrollIntoView({ behavior: "smooth", block: "start" });
       setIsOpen(false);
 
-      // Ganti hash tanpa memicu scroll lagi
       history.pushState(null, "", path);
     }
   };
