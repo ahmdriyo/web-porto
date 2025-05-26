@@ -15,6 +15,9 @@ import {
   SiMysql,
   SiFirebase,
   SiTypescript,
+  SiSass,
+  SiSupabase,
+  SiPostgresql,
 } from "react-icons/si";
 import { TbBrandReactNative } from "react-icons/tb";
 import { motion } from "framer-motion";
@@ -25,7 +28,6 @@ import {
   TooltipContent,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-
 
 const skills = {
   title: "My skills",
@@ -39,28 +41,24 @@ const skills = {
       icon: <FaCss3 />,
     },
     {
+      name: "SCSS",
+      icon: <SiSass />,
+    },
+    {
       name: "Javascript",
       icon: <FaJs />,
+    },
+    {
+      name: "Typescript",
+      icon: <SiTypescript />,
     },
     {
       name: "Git",
       icon: <FaGitAlt />,
     },
     {
-      name: "MongoDB",
-      icon: <SiMongodb />,
-    },
-    {
-      name: "Mysql",
-      icon: <SiMysql />,
-    },
-    {
-      name: "Figma",
-      icon: <FaFigma />,
-    },
-    {
-      name: "Node js",
-      icon: <FaNodeJs />,
+      name: "Supabase",
+      icon: <SiSupabase />,
     },
     {
       name: "React",
@@ -75,9 +73,26 @@ const skills = {
       icon: <SiNextdotjs />,
     },
     {
-      name: "Typescript",
-      icon: <SiTypescript />,
+      name: "MongoDB",
+      icon: <SiMongodb />,
     },
+    {
+      name: "Mysql",
+      icon: <SiMysql />,
+    },
+    {
+      name: "Postgresql",
+      icon: <SiPostgresql  />,
+    },
+    {
+      name: "Figma",
+      icon: <FaFigma />,
+    },
+    {
+      name: "Node js",
+      icon: <FaNodeJs />,
+    },
+
     {
       name: "React Native",
       icon: <TbBrandReactNative />,

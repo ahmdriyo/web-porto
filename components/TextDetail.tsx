@@ -12,10 +12,11 @@ const TextDetail = () => {
     >
       <span className="text-xl">Web Developer & Mobile Developer</span>
       <p className="max-w-[500px] mb-9 text-white/80">
-        I am a student in the field of Informatics Engineering who has a great
-        passion in web and mobile development. With a high desire to continue
-        learning and developing, I always try to keep up with the latest
-        technological developments and apply my knowledge in real projects.{" "}
+        I am an Informatics Engineering student passionate about web
+        development, with a strong focus on frontend. While I also explore
+        mobile and backend development, I enjoy creating intuitive and engaging
+        user interfaces and continuously seek to grow through real-world
+        projects.{" "}
       </p>
     </motion.section>
   );

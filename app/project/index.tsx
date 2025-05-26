@@ -1,24 +1,176 @@
 "use client";
-import { motion } from "framer-motion";
 import {
   Tooltip,
-  TooltipProvider,
   TooltipContent,
+  TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import { BsArrowUpRight, BsGithub } from "react-icons/bs";
-import React, { useState } from "react";
-import Link from "next/link";
-import Image from "next/image";
 import WorkSliderBtn from "@/components/WorkSliderBtn";
+import { motion, useAnimation } from "framer-motion";
+import Image from "next/image";
+import Link from "next/link";
+import React, { useState } from "react";
+import { BsGithub } from "react-icons/bs";
 import { FaLocationArrow } from "react-icons/fa";
 import { useInView } from "react-intersection-observer";
-import {  useAnimation } from "framer-motion";
+import "swiper/css";
+import { Swiper, SwiperSlide } from "swiper/react";
 const projects = [
   {
     num: "01",
+    category: "Web App",
+    description: "Dacapo (Elerning from korea)",
+    stack: [
+      { name: "Next js" },
+      { name: "SCSS" },
+      { name: "Typescript" },
+      { name: "Firebase" },
+      { name: "Tanstack Query" },
+      { name: "Tiptap" },
+      { name: "Antd" },
+      { name: "Tosspayments" },
+      { name: "Excalidraw" },
+      { name: "Ckeditor" },
+    ],
+    image: "/assets/project/dacapo.png",
+    demo: "https://flydacapo.com/",
+  },
+  {
+    num: "02",
+    category: "Web App",
+    description: "Sistem Informasi Transportasi Kalsel",
+    stack: [
+      { name: "Next js" },
+      { name: "Tailwind" },
+      { name: "Typescript" },
+      { name: "Antd" },
+      { name: "Supabase" },
+      { name: "Prisma" },
+      { name: "Leaflet" },
+    ],
+    image: "/assets/project/simt.png",
+    github: "https://github.com/ahmdriyo/next-js-admin-template",
+    demo: "https://sistem-informasi-transportasi.vercel.app/",
+  },
+  {
+    num: "03",
+    category: "Web App",
+    description: "Mahakreatif Studio",
+    stack: [
+      { name: "Next js" },
+      { name: "Tailwind" },
+      { name: "Typescript" },
+      { name: "Mantine" },
+      { name: "Supabase" },
+      { name: "Prisma" },
+      { name: "Tiptap" },
+      { name: "Framer Motion" },
+      { name: "Midtrans" },
+    ],
+    image: "/assets/project/Mahakreatif.png",
+    github: "https://github.com/ahmdriyo/Fullstack-MahaKreatif",
+    demo: "https://www.mahakreatif-studio.com/",
+  },
+  {
+    num: "04",
+    category: "Web App",
+    description: "Website Trayek Angkutan Umum.",
+    stack: [
+      { name: "Html" },
+      { name: "Css" },
+      { name: "Javascript" },
+      { name: "Tailwind" },
+      { name: "Next Js" },
+      { name: "Firebase" },
+    ],
+    image: "/assets/project/angkutan.png",
+    github: "https://github.com/ahmdriyo/web-angkutan.git",
+    demo: "https://web-angkutan.vercel.app/",
+  },
+  {
+    num: "05",
+    category: "Web App",
+    description: "Web GIS Kampus di Barito Kuala.",
+    stack: [
+      { name: "Html" },
+      { name: "Css" },
+      { name: "Javascript" },
+      { name: "React Js" },
+      { name: "Firebase" },
+      { name: "Openstreetmap" },
+      { name: "Leaflet" },
+    ],
+    image: "/assets/project/gis.png",
+    github: "https://github.com/ahmdriyo/web_sig_baritokuala.git",
+    demo: "https://web-gis-kampusbaritokuala.vercel.app/",
+  },
+  {
+    num: "06",
+    category: "Web App",
+    description: "Website Trayek Kereta.",
+    stack: [
+      { name: "Html" },
+      { name: "Css" },
+      { name: "TypeScript" },
+      { name: "Tailwind" },
+      { name: "Next Js" },
+      { name: "Firebase" },
+    ],
+    image: "/assets/project/kereta.png",
+    github: "https://github.com/ahmdriyo/web-angkutan",
+    demo: "https://web-kereta.vercel.app/",
+  },
+  {
+    num: "07",
+    category: "Web App",
+    description: "Website Events Bootcamp.",
+    stack: [
+      { name: "Html" },
+      { name: "Css" },
+      { name: "TypeScript" },
+      { name: "Tailwind" },
+      { name: "Next Js" },
+      { name: "Node Js" },
+    ],
+    image: "/assets/project/webEvent.png",
+    github: "https://github.com/ahmdriyo/web-kereta.git",
+    demo: "https://web-kereta.vercel.app/kereta",
+  },
+  {
+    num: "08",
+    category: "Web App",
+    description: "Website Admin Events Bootcamp.",
+    stack: [
+      { name: "Html" },
+      { name: "Css" },
+      { name: "Javascript" },
+      { name: "CRUD" },
+      { name: "React Bootstrap" },
+      { name: "React Js" },
+      { name: "Redux" },
+      { name: "Axios" },
+    ],
+    image: "/assets/project/client.png",
+    github: "https://github.com/ahmdriyo/administrator-client-web-event.git",
+  },
+  {
+    num: "09",
+    category: "Web App Clone",
+    description: "Website Replika dari WhatsApp Download. ",
+    stack: [{ name: "Html" }, { name: "Css" }, { name: "Javascript" }],
+    image: "/assets/project/cloneWa.png",
+    github: "https://github.com/ahmdriyo/wa-clone.git",
+  },
+  {
+    num: "10",
+    category: "Web App",
+    description: "Website Pemutar Musik.",
+    stack: [{ name: "Html" }, { name: "Css" }, { name: "Javascript" }],
+    image: "/assets/project/musik.png",
+    github: "https://github.com/ahmdriyo/pemutarMusik.git",
+  },
+  {
+    num: "11",
     category: "Mobile App",
     description: "Health Fit, Aplikasi Kosultasi kesehatan berbasis chat.",
     stack: [
@@ -34,7 +186,7 @@ const projects = [
     github: "https://github.com/ahmdriyo/health.git",
   },
   {
-    num: "02",
+    num: "12",
     category: "Mobile App",
     description:
       "Kalori Fit, Aplikasi penghitung dan pencatat asupan kalori harian.",
@@ -52,7 +204,7 @@ const projects = [
     github: "https://github.com/ahmdriyo/KaloriFit.git",
   },
   {
-    num: "03",
+    num: "13",
     category: "Mobile App",
     description: "Aplikasi Kuis Tes Psikologi.",
     stack: [
@@ -67,7 +219,7 @@ const projects = [
     github: "https://github.com/ahmdriyo/app-base.git",
   },
   {
-    num: "04",
+    num: "14",
     category: "Mobile App",
     description: "Aplikasi Chat Saling bertukar pesan.",
     stack: [
@@ -80,118 +232,6 @@ const projects = [
     image: "/assets/project/chatApp.png",
     github: "https://github.com/ahmdriyo/Firebase-Chat.git",
   },
-  {
-    num: "05",
-    category: "Web App",
-    description: "Website Trayek Angkutan Umum.",
-    stack: [
-      { name: "Html" },
-      { name: "Css" },
-      { name: "Javascript" },
-      { name: "Tailwind" },
-      { name: "Next Js" },
-      { name: "Firebase" },
-    ],
-    image: "/assets/project/angkutan.png",
-    github: "https://github.com/ahmdriyo/web-angkutan.git",
-    demo: "https://web-angkutan.vercel.app/",
-  },
-  {
-    num: "06",
-    category: "Web App",
-    description: "Web GIS Kampus di Barito Kuala.",
-    stack: [
-      { name: "Html" },
-      { name: "Css" },
-      { name: "Javascript" },
-      { name: "React Js" },
-      { name: "Firebase" },
-      { name: "Openstreetmap" },
-      { name: "Leaflet" },
-    ],
-    image: "/assets/project/gis.png",
-    github: "https://github.com/ahmdriyo/web_sig_baritokuala.git",
-    demo: "https://web-gis-kampusbaritokuala.vercel.app/",
-  },
-  {
-    num: "07",
-    category: "Web App",
-    description: "Website Trayek Kereta.",
-    stack: [
-      { name: "Html" },
-      { name: "Css" },
-      { name: "TypeScript" },
-      { name: "Tailwind" },
-      { name: "Next Js" },
-      { name: "Firebase" },
-    ],
-    image: "/assets/project/kereta.png",
-    github: "https://github.com/ahmdriyo/web-angkutan",
-    demo: "https://web-kereta.vercel.app/",
-  },
-  {
-    num: "08",
-    category: "Web App",
-    description: "Website Events Bootcamp.",
-    stack: [
-      { name: "Html" },
-      { name: "Css" },
-      { name: "TypeScript" },
-      { name: "Tailwind" },
-      { name: "Next Js" },
-      { name: "Node Js" },
-    ],
-    image: "/assets/project/webEvent.png",
-    github: "https://github.com/ahmdriyo/web-kereta.git",
-    demo: "https://web-kereta.vercel.app/kereta",
-  },
-  {
-    num: "09",
-    category: "Web App",
-    description: "Website Admin Events Bootcamp.",
-    stack: [
-      { name: "Html" },
-      { name: "Css" },
-      { name: "Javascript" },
-      { name: "CRUD" },
-      { name: "React Bootstrap" },
-      { name: "React Js" },
-      { name: "Redux" },
-      { name: "Axios" },
-    ],
-    image: "/assets/project/client.png",
-    github: "https://github.com/ahmdriyo/administrator-client-web-event.git",
-  },
-  {
-    num: "10",
-    category: "Web App Clone",
-    description: "Website Replika dari WhatsApp Download. ",
-    stack: [{ name: "Html" }, { name: "Css" }, { name: "Javascript" }],
-    image: "/assets/project/cloneWa.png",
-    github: "https://github.com/ahmdriyo/wa-clone.git",
-  },
-  {
-    num: "11",
-    category: "Web App",
-    description: "Website Portofolio sebelumnya.",
-    stack: [
-      { name: "Html" },
-      { name: "Css" },
-      { name: "Javascript" },
-      { name: "Tailwind" },
-      { name: "Next Js" },
-    ],
-    image: "/assets/project/porto.png",
-    github: "https://github.com/ahmdriyo/Porto_any.git",
-  },
-  {
-    num: "12",
-    category: "Web App",
-    description: "Website Pemutar Musik.",
-    stack: [{ name: "Html" }, { name: "Css" }, { name: "Javascript" }],
-    image: "/assets/project/musik.png",
-    github: "https://github.com/ahmdriyo/pemutarMusik.git",
-  },
 ];
 const ProjectPage = () => {
   const [project, setProject] = useState(projects[0]);
@@ -201,8 +241,8 @@ const ProjectPage = () => {
   };
   const controls = useAnimation();
   const [ref, inView] = useInView({
-    triggerOnce: true, 
-    threshold: 0.3,    
+    triggerOnce: true,
+    threshold: 0.3,
   });
 
   React.useEffect(() => {
@@ -214,7 +254,7 @@ const ProjectPage = () => {
     <motion.div
       ref={ref}
       initial={{ opacity: 0, x: -50 }}
-      animate={controls}               
+      animate={controls}
       transition={{ delay: 0.2, duration: 0.6, ease: "easeInOut" }}
       className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0"
     >
@@ -242,7 +282,8 @@ const ProjectPage = () => {
               {/* border */}
               <div className="border border-white/20"></div>
               <div className=" flex items-center gap-4">
-                <Link href={project.github} target="_blank">
+                {project.github && (
+                  <Link href={project.github} target="_blank">
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
@@ -254,6 +295,7 @@ const ProjectPage = () => {
                     </Tooltip>
                   </TooltipProvider>
                 </Link>
+                )}
                 {project.demo && (
                   <Link href={project.demo} target="_blank">
                     <TooltipProvider delayDuration={100}>
