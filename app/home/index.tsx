@@ -24,7 +24,7 @@ const HomePage = () => {
               >
                 <Link
                   target="_blank"
-                  href="https://drive.google.com/file/d/1MJebniXum5Mwji0pYbf2kwPbPACH1rJI/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1y-hS0zoW4f3HfG531rzuqk7NFafMrqNF/view?usp=sharing"
                 >
                   Download CV
                 </Link>

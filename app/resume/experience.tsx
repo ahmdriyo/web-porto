@@ -11,17 +11,22 @@ const experience = {
     "These are some of my independent projects and there are several projects that I made with the team.",
   items: [
     {
-      project: "Health Fit",
-      position: "Mobile App",
-      duration: "2024",
+      project: "Dacapo",
+      position: "Web App",
+      duration: "2025",
     },
     {
-      project: "Psychology quiz app",
-      position: "Mobile App",
-      duration: "2024",
+      project: "Sistem Informasi Transportasi",
+      position: "Web App",
+      duration: "2025",
     },
     {
-      project: "Web Portofolio",
+      project: "Compeny Profile",
+      position: "Web App",
+      duration: "2025",
+    },
+    {
+      project: "MahaKreatif Studio",
       position: "Web App",
       duration: "2024",
     },
@@ -46,6 +51,12 @@ const experience = {
       duration: "2024",
     },
     {
+      project: "Web Portofolio",
+      position: "Web App",
+      duration: "2024",
+    },
+    
+    {
       project: "Server Event Bootcamp",
       position: "BackEnd",
       duration: "2024",
@@ -69,6 +80,16 @@ const experience = {
       project: "Web Music player and list",
       position: "Web App",
       duration: "2022",
+    },
+     {
+      project: "Health Fit",
+      position: "Mobile App",
+      duration: "2024",
+    },
+    {
+      project: "Psychology quiz app",
+      position: "Mobile App",
+      duration: "2024",
     },
   ],
 };

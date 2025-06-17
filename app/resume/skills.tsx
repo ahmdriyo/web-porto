@@ -18,6 +18,7 @@ import {
   SiSass,
   SiSupabase,
   SiPostgresql,
+  SiLaravel,
 } from "react-icons/si";
 import { TbBrandReactNative } from "react-icons/tb";
 import { motion } from "framer-motion";
@@ -71,6 +72,10 @@ const skills = {
     {
       name: "Next js",
       icon: <SiNextdotjs />,
+    },
+    {
+      name: "Laravel",
+      icon: <SiLaravel />,
     },
     {
       name: "MongoDB",

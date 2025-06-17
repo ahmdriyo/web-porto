@@ -17,9 +17,9 @@ import "swiper/css";
 import { Swiper, SwiperSlide } from "swiper/react";
 const projects = [
   {
-    num: "01",
     category: "Web App",
-    description: "Dacapo (Elerning from korea)",
+    title: "Dacapo (Elerning from korea)",
+    description: "Dacapo is an e-learning platform from Korea specifically designed for pilot learning. This application provides exam features, daily quizzes, and an interactive learning system. Dacapo supports four login methods, namely Google, Naver, Apple, and Kakao. In addition, integration with TossPayments allows users to make payments easily and securely.",
     stack: [
       { name: "Next js" },
       { name: "SCSS" },
@@ -36,15 +36,16 @@ const projects = [
     demo: "https://flydacapo.com/",
   },
   {
-    num: "02",
     category: "Web App",
-    description: "Sistem Informasi Transportasi Kalsel",
+    title: "Sistem Informasi Transportasi Kalsel",
+    description: "South Kalimantan Transportation Information System is a website that provides complete information about transportation in the South Kalimantan region. This application is equipped with a geographic map feature (GeoMap) that displays terminal locations, as well as interactive navigation using gesture recognition, allowing users to navigate pages with just hand movements in real-time.",
     stack: [
       { name: "Next js" },
       { name: "Tailwind" },
       { name: "Typescript" },
       { name: "Antd" },
       { name: "Supabase" },
+      { name: "Mediapipe" },
       { name: "Prisma" },
       { name: "Leaflet" },
     ],
@@ -53,9 +54,9 @@ const projects = [
     demo: "https://sistem-informasi-transportasi.vercel.app/",
   },
   {
-    num: "03",
     category: "Web App",
-    description: "Mahakreatif Studio",
+    title: "Mahakreatif Studio",
+    description: "Mahakreatif Studio is a freelance platform specifically for students, designed while participating in the Independent Campus Entrepreneurship (WMK) program. This website is a creative platform for students to offer digital services or projects, build portfolios, and connect with potential clients professionally and easily.",
     stack: [
       { name: "Next js" },
       { name: "Tailwind" },
@@ -72,9 +73,24 @@ const projects = [
     demo: "https://www.mahakreatif-studio.com/",
   },
   {
-    num: "04",
     category: "Web App",
-    description: "Website Trayek Angkutan Umum.",
+    title: "Company Profile",
+    description: "This company profile website was developed using Copilot Agent from GitHub, where 90% of the code was written by Ai from AI prompts in less than 1 hour. Manual adjustments were made to adjust the design and content. This website is open-source and free to be developed according to your needs.",
+    stack: [
+      { name: "Next js" },
+      { name: "Tailwind" },
+      { name: "Typescript" },
+      { name: "Antd" },
+      { name: "Framer Motion" },
+    ],
+    image: "/assets/project/company-profile.png",
+    github: "https://github.com/ahmdriyo/company-profile",
+    demo: "https://company-profile-dummy.vercel.app/",
+  },
+  {
+    category: "Web App",
+    title: "Website Trayek Angkutan Umum.",
+    description: "Public Transportation Route Website is a web-based platform that provides route information for various types of public transportation. This website is designed to make it easier to see available transportation routes, especially in areas with many transportation options.",
     stack: [
       { name: "Html" },
       { name: "Css" },
@@ -88,9 +104,9 @@ const projects = [
     demo: "https://web-angkutan.vercel.app/",
   },
   {
-    num: "05",
     category: "Web App",
-    description: "Web GIS Kampus di Barito Kuala.",
+    title: "Web GIS Kampus di Barito Kuala.",
+    description: "Web GIS Campus in Barito Kuala is a website based on Geographic Information System (GIS) that displays details of campuses in the Barito Kuala area. This application is equipped with an interactive map that marks the location of each campus accurately using markers.",
     stack: [
       { name: "Html" },
       { name: "Css" },
@@ -105,9 +121,9 @@ const projects = [
     demo: "https://web-gis-kampusbaritokuala.vercel.app/",
   },
   {
-    num: "06",
     category: "Web App",
-    description: "Website Trayek Kereta.",
+    title: "Website Trayek Kereta.",
+    description: "Train Track Website is an informative website that displays train routes or tracks. Users can see the train tracks visually and clearly, helping in planning a trip or simply recognizing the available train transportation network.",
     stack: [
       { name: "Html" },
       { name: "Css" },
@@ -121,9 +137,9 @@ const projects = [
     demo: "https://web-kereta.vercel.app/",
   },
   {
-    num: "07",
     category: "Web App",
-    description: "Website Events Bootcamp.",
+    title: "Website Events Bootcamp.",
+    description: "This website is created to display bootcamp event information such as schedules, speakers, and participant registration. Designed with a modern and user-friendly appearance so that users can easily access information.",
     stack: [
       { name: "Html" },
       { name: "Css" },
@@ -137,9 +153,9 @@ const projects = [
     demo: "https://web-kereta.vercel.app/kereta",
   },
   {
-    num: "08",
     category: "Web App",
-    description: "Website Admin Events Bootcamp.",
+    title: "Website Admin Events Bootcamp.",
+    description: "is an admin dashboard to manage bootcamp event data, starting from adding/editing events, participant management, to viewing statistical data. Made using React and Redux.",
     stack: [
       { name: "Html" },
       { name: "Css" },
@@ -154,25 +170,25 @@ const projects = [
     github: "https://github.com/ahmdriyo/administrator-client-web-event.git",
   },
   {
-    num: "09",
     category: "Web App Clone",
-    description: "Website Replika dari WhatsApp Download. ",
+    title: "Website Replika dari WhatsApp Download.",
+    description: "This website is a replication of the official WhatsApp download page display. This project was created as a front-end exercise to deepen the understanding of HTML, CSS, and JavaScript structures",
     stack: [{ name: "Html" }, { name: "Css" }, { name: "Javascript" }],
     image: "/assets/project/cloneWa.png",
     github: "https://github.com/ahmdriyo/wa-clone.git",
   },
   {
-    num: "10",
     category: "Web App",
-    description: "Website Pemutar Musik.",
+    title: "Website Pemutar Musik.",
+    description: "A music player web application that allows users to select songs and control playback (play, pause, stop). Built with HTML, CSS, and JavaScript as an interactive application creation exercise.",
     stack: [{ name: "Html" }, { name: "Css" }, { name: "Javascript" }],
     image: "/assets/project/musik.png",
     github: "https://github.com/ahmdriyo/pemutarMusik.git",
   },
   {
-    num: "11",
     category: "Mobile App",
-    description: "Health Fit, Aplikasi Kosultasi kesehatan berbasis chat.",
+    title: "Health Fit, Aplikasi Kosultasi kesehatan berbasis chat.",
+    description: "A mobile application that allows users to consult directly with medical personnel through a chat feature. Designed to provide easy access to digital health services.",
     stack: [
       { name: "React Native" },
       { name: "Javascript" },
@@ -186,10 +202,9 @@ const projects = [
     github: "https://github.com/ahmdriyo/health.git",
   },
   {
-    num: "12",
     category: "Mobile App",
-    description:
-      "Kalori Fit, Aplikasi penghitung dan pencatat asupan kalori harian.",
+    title: "Kalori Fit, Aplikasi penghitung dan pencatat asupan kalori harian.",
+    description: "Aplikasi untuk mencatat dan memantau asupan kalori harian berdasarkan makanan yang dikonsumsi. Cocok untuk kamu yang sedang diet atau menjaga pola makan sehat.",
     stack: [
       { name: "React Native" },
       { name: "Javascript" },
@@ -204,9 +219,9 @@ const projects = [
     github: "https://github.com/ahmdriyo/KaloriFit.git",
   },
   {
-    num: "13",
     category: "Mobile App",
-    description: "Aplikasi Kuis Tes Psikologi.",
+    title: "Aplikasi Kuis Tes Psikologi.",
+    description: "A quiz-based application to help users recognize psychological conditions through a series of questions arranged in the form of a simple test.",
     stack: [
       { name: "React Native" },
       { name: "Javascript" },
@@ -219,9 +234,9 @@ const projects = [
     github: "https://github.com/ahmdriyo/app-base.git",
   },
   {
-    num: "14",
     category: "Mobile App",
-    description: "Aplikasi Chat Saling bertukar pesan.",
+    title: "Aplikasi Chat Saling bertukar pesan.",
+    description: "A simple chat application that allows users to send and receive messages to each other in real-time using Firebase as the backend.",
     stack: [
       { name: "React Native" },
       { name: "Javascript" },
@@ -260,15 +275,15 @@ const ProjectPage = () => {
     >
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row xl:gap-[30px]">
-          <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
+          <div className="w-full xl:w-[50%] flex flex-col xl:justify-between order-2 xl:order-none">
             <div className=" flex flex-col gap-[30px]">
               <div className=" text-[50px] font-bold leading-none text-white hover:text-accent">
-                {project.num}
+                {(projects.indexOf(project) + 1).toString().padStart(2, "0")}
               </div>
               <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
                 {project.category}
               </h2>
-              <p className="text-white/60">{project.description}</p>
+              <p className="text-white/60">{project.title}</p>
               <div className="gap-2 grid grid-cols-1 xl:grid-cols-2 md:grid-cols-2">
                 {project.stack.map((item, index) => {
                   return (
@@ -281,20 +296,21 @@ const ProjectPage = () => {
               </div>
               {/* border */}
               <div className="border border-white/20"></div>
+              <p className="text-[14px]">{project.description}</p>
               <div className=" flex items-center gap-4">
                 {project.github && (
                   <Link href={project.github} target="_blank">
-                  <TooltipProvider delayDuration={100}>
-                    <Tooltip>
-                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                        <BsGithub className="text-white text-3xl group-hover:text-accent" />
-                      </TooltipTrigger>
-                      <TooltipContent>
-                        <p>Git Repository</p>
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
-                </Link>
+                    <TooltipProvider delayDuration={100}>
+                      <Tooltip>
+                        <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
+                          <BsGithub className="text-white text-3xl group-hover:text-accent" />
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p>Git Repository</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                  </Link>
                 )}
                 {project.demo && (
                   <Link href={project.demo} target="_blank">

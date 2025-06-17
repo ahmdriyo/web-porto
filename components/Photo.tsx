@@ -41,7 +41,7 @@ const Photo = () => {
                 src={perofile}
                 priority
                 quality={100}
-                className="ml-[2px] mt-[1px] w-[200px] h-[200px] xl:ml-[0] xl:mt-[-2px] xl:w-[300px] xl:h-[300px] object-contain rounded-full"
+                className="w-[200px] h-[200px] xl:w-[300px] xl:h-[300px] object-cover rounded-full border-4 border-[#23232b] shadow-[0_4px_32px_0_rgba(0,255,153,0.10),0_1.5px_8px_0_rgba(99,102,241,0.10)] hover:shadow-[0_8px_32px_0_rgba(0,255,153,0.18),0_1.5px_8px_0_rgba(99,102,241,0.12)] transition-shadow duration-300"
               />
             </motion.div>
             <motion.svg
@@ -65,7 +65,7 @@ const Photo = () => {
                     "16 25 92 22",
                     "4 250 22 22",
                   ],
-                  rotate: [120, 360],
+                  rotate: [0, 360],
                 }}
                 transition={{
                   duration: 20,
@@ -93,7 +93,7 @@ const Photo = () => {
             initial={{ strokeDasharray: "24 10 0 0" }}
             animate={{
               strokeDasharray: ["15 120 25 25", "16 25 92 72", "4 250 22 22"],
-              rotate: [120, 360],
+              rotate: [0, -360],
             }}
             transition={{
               duration: 20,
