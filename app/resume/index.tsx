@@ -7,6 +7,7 @@ import EducationTabsContent from "./education";
 import SkillsTabsContent from "./skills";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
+import CertificateTabsContent from "./certificate";
 
 const ResumePage = () => {
   const controls = useAnimation();
@@ -47,6 +48,7 @@ const ResumePage = () => {
             <TabsList className="flex flex-col w-full sm:w-[300px] mx-auto  gap-5">
               <TabsTrigger value="experience">Experience</TabsTrigger>
               <TabsTrigger value="education">Education</TabsTrigger>
+              <TabsTrigger value="certificate">Certificate</TabsTrigger>
               <TabsTrigger value="skills">Skills</TabsTrigger>
               <TabsTrigger value="about">About me</TabsTrigger>
             </TabsList>
@@ -59,10 +61,11 @@ const ResumePage = () => {
               delay: 0.5,
               ease: "easeOut",
             }}
-            className="min-h-[70vh] w-full"
+            className="min-h-[50vh] w-full"
           >
             <ExperienceTabsContent />
             <EducationTabsContent />
+            <CertificateTabsContent />
             <SkillsTabsContent />
             <AboutTabsContent />
           </motion.div>

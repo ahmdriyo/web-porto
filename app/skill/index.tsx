@@ -10,22 +10,21 @@ const services = [
     num: "01",
     title: "Web Developer",
     description:
-      "I have expertise in various modern technologies, including HTML5, CSS3, SCSS, JavaScript, Typescript, React Js, Next Js, Node.js, Express.js, Tailwind CSS, API Integration.",
-    icon: <IoPhonePortraitOutline className="text-primary text-3xl" />,
-    
+      "I have expertise in various modern technologies, including HTML5, CSS3, SCSS, JavaScript, Typescript, React Js, Next Js, Laravel, Node.js, Express.js, Tailwind CSS, API Integration.",
+    icon: <IoIosDesktop className="text-primary text-3xl" />,
   },
   {
     num: "02",
     title: "Mobile Developer",
     description:
       "I have expertise in a variety of modern technologies, including React Native, Expo, API Integration, Firebase, Redux, and Axios.",
-    icon : <IoIosDesktop className="text-primary text-3xl"/>,
+    icon: <IoPhonePortraitOutline className="text-primary text-3xl" />,
   },
   {
     num: "03",
     title: "UI&UX",
     description: "I have expertise in Figma, Canva",
-    icon: <MdDesignServices className="text-primary text-3xl"/>,
+    icon: <MdDesignServices className="text-primary text-3xl" />,
   },
 ];
 
@@ -34,8 +33,8 @@ import { useInView } from "react-intersection-observer";
 const SkillPage = () => {
   const controls = useAnimation();
   const [ref, inView] = useInView({
-    triggerOnce: true, 
-    threshold: 0.3,   
+    triggerOnce: true,
+    threshold: 0.3,
   });
 
   React.useEffect(() => {
@@ -44,7 +43,10 @@ const SkillPage = () => {
     }
   }, [controls, inView]);
   return (
-    <section ref={ref} className="min-h-[80vh] flex flex-col justify-center py-12 xl:py-0 mt-20">
+    <section
+      ref={ref}
+      className="min-h-[80vh] flex flex-col justify-center py-12 xl:py-0 mt-20"
+    >
       <div className="container mx-auto mt-5">
         <motion.div
           initial={{ opacity: 0, x: -50 }}
