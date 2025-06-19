@@ -30,9 +30,9 @@ const about = {
 };
 const AboutTabsContent = () => {
   return (
-    <TabsContent className=" w-full text-center xl:text-left" value="about">
-      <div className="flex flex-col gap-[30px]">
-        <h3 className="text-4xl font-bold">{about.title}</h3>
+    <TabsContent className=" w-full text-center xl:text-left "  value="about">
+      <div className="flex flex-col gap-[30px] min-h-[650px]">
+        <h3 className="text-4xl font-extrabold text-accent drop-shadow-lg">{about.title}</h3>
         <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
           {about.description}
         </p>

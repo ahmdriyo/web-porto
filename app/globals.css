@@ -6,6 +6,10 @@
 @layer base {
   body {
     @apply font-primary bg-primary text-white leading-loose;
+    background-image: 
+    linear-gradient(to right, #000000 1px, transparent 1px),
+    linear-gradient(to bottom, #000000 1px, transparent 1px);
+    background-size: 80px 80px;
   }
 
   .h1 {
