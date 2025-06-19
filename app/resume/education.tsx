@@ -46,12 +46,12 @@ const EducationTabsContent = () => {
   return (
     <TabsContent className=" w-full" value="education">
       <div className="flex flex-col gap-[30px] text-center xl:text-left">
-        <h3 className="text-4xl font-bold">{education.title}</h3>
+        <h3 className="text-4xl font-extrabold text-accent drop-shadow-lg">{education.title}</h3>
         <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
           {education.description}
         </p>
       </div>
-      <ScrollArea className="h-[400px]">
+      <ScrollArea className="h-[550px]">
         <motion.ul
           className="grid grid-cols-1 lg:grid-cols-2 gap-[30px] mt-4"
           variants={container}
