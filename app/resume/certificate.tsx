@@ -10,12 +10,16 @@ const certificate = {
   description: "This is my certificate history.",
   items: [
     {
-      title: "Full-Stack Web Developer",
+      title: "Full-Stack Web Developer(MERN)",
       image: "/assets/certificate/mren.png",
     },
     {
       title: "Desain Web",
       image: "/assets/certificate/desain.png",
+    },
+    {
+      title: "Backend Web Developer(NestJS)",
+      image: "/assets/certificate/nest.png",
     },
     {
       title: "Literasi Digital",

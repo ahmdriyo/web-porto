@@ -10,7 +10,7 @@ const services = [
     num: "01",
     title: "Web Developer",
     description:
-      "I have expertise in various modern technologies, including HTML5, CSS3, SCSS, JavaScript, Typescript, React Js, Next Js, Laravel, Node.js, Express.js, Tailwind CSS, API Integration.",
+      "I have expertise in various modern technologies, including HTML5, CSS3, SCSS, JavaScript, Typescript, React Js, Next Js, Laravel, Node.js, Nest Js, Express.js, Tailwind CSS, API Integration.",
     icon: <IoIosDesktop className="text-primary text-3xl" />,
   },
   {

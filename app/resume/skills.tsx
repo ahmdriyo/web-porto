@@ -19,6 +19,7 @@ import {
   SiSupabase,
   SiPostgresql,
   SiLaravel,
+  SiNestjs,
 } from "react-icons/si";
 import { TbBrandReactNative } from "react-icons/tb";
 import { motion } from "framer-motion";
@@ -96,6 +97,10 @@ const skills = {
     {
       name: "Node js",
       icon: <FaNodeJs />,
+    },
+    {
+      name: "Nest js",
+      icon: <SiNestjs />,
     },
 
     {
