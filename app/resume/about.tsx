@@ -4,7 +4,7 @@ import { TabsContent } from "@/components/ui/tabs";
 const about = {
   title: "About me",
   description:
-    "My journey started in 2022 as a Front End Web programmer. In late 2023 I started studying mobile developer. I am very enthusiastic about the world of technology and science. Coding is my passion, and I am always looking for opportunities to improve my knowledge and skills in creating innovative solutions. This passion is what drives me to continue to develop and become a reliable engineer.",
+    "My journey began in 2022 as a Front-End Web Developer. In late 2023, I expanded my learning into mobile development. Over the past two years, I have returned to deeply focus on web development and advanced into full-stack development. I’m passionate about technology and innovation, and coding has become more than just a skill it's a craft I continuously sharpen. This drive keeps me learning, building, and striving to become a reliable and impactful software engineer.",
   info: [
     {
       fieldNama: "Name",
@@ -16,7 +16,7 @@ const about = {
     },
     {
       fieldNama: "Experience",
-      fieldValue: "+ 3 Years",
+      fieldValue: "+ 3 Years Journey as a Software Developer",
     },
     {
       fieldNama: "Email",
