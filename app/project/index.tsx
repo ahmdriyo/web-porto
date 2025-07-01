@@ -149,8 +149,7 @@ const projects = [
       { name: "Node Js" },
     ],
     image: "/assets/project/webEvent.png",
-    github: "https://github.com/ahmdriyo/web-kereta.git",
-    demo: "https://web-kereta.vercel.app/kereta",
+    github: "https://github.com/ahmdriyo/landing-pages-web-event",
   },
   {
     category: "Web App",

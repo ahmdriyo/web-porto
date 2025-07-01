@@ -75,7 +75,7 @@ const experience = {
       `.trim(),
       location: "South Korea",
       duration: "2025 Jan - Present",
-      compeny: "-",
+      compeny: "PT. Healstation Indonesia",
     },
     {
       type: "Freelance ",
