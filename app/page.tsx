@@ -7,7 +7,7 @@ import Footer from "./footer";
 
 const Home = () => {
   return (
-    <section className="h-full pb-4">
+    <section className="h-full">
       <section id="home">
         <HomePage />
       </section>
