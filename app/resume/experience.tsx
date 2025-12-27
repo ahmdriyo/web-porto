@@ -12,6 +12,75 @@ const experience = {
   items: [
     {
       type: "Internship",
+      position: "Frontend Developer",
+      project: "National Civil Servant Assessment System",
+      description: `
+    <div style="padding-left: 10px;">
+
+      <div>
+        <h2 style="font-weight: 600; color: #0ed145; font-size: 1.1rem; margin-bottom: 4px;">
+          National-Scale Assessment System Development
+        </h2>
+        <p><strong>Description:</strong> Developing and improving a national-scale assessment system for Indonesian Civil Servants with complex workflows and multiple user roles.</p>
+        <p><strong>Achievement:</strong></p>
+        <ul style="list-style: disc; padding-left: 20px;">
+          <li>Built structured assessment pages aligned with real business rules.</li>
+          <li>Implemented verification, approval, and rejection flows based on user roles.</li>
+          <li>Developed role-based dashboards to improve user clarity and efficiency.</li>
+        </ul>
+        <p><strong>Technologies:</strong> Astro, React.js, TypeScript, Golang, Tailwind CSS</p>
+      </div>
+
+      <div style="margin-top: 12px">
+        <h4 style="font-weight: 600; color: #0ed145; font-size: 1.1rem; margin-bottom: 4px;">
+          User Interface and Experience Enhancement
+        </h4>
+        <p><strong>Description:</strong> Improving usability and reliability of the system through responsive and user-focused UI components.</p>
+        <p><strong>Achievement:</strong></p>
+        <ul style="list-style: disc; padding-left: 20px;">
+          <li>Created dynamic forms with validation to reduce user input errors.</li>
+          <li>Implemented responsive loading states and clear status indicators.</li>
+          <li>Improved notification handling for better user feedback.</li>
+        </ul>
+        <p><strong>Technologies:</strong> React.js, TypeScript, Tailwind CSS</p>
+      </div>
+
+      <div style="margin-top: 12px">
+        <h4 style="font-weight: 600; color: #0ed145; font-size: 1.1rem; margin-bottom: 4px;">
+          Data Management and System Optimization
+        </h4>
+        <p><strong>Description:</strong> Ensuring accurate data handling and smooth system integration with backend services.</p>
+        <p><strong>Achievement:</strong></p>
+        <ul style="list-style: disc; padding-left: 20px;">
+          <li>Implemented Excel export functionality for assessment data.</li>
+          <li>Optimized field validation and data management for higher accuracy.</li>
+          <li>Integrated APIs and managed authentication tokens with backend teams.</li>
+        </ul>
+        <p><strong>Technologies:</strong> React.js, TypeScript, REST API</p>
+      </div>
+
+      <div style="margin-top: 12px">
+        <h4 style="font-weight: 600; color: #0ed145; font-size: 1.1rem; margin-bottom: 4px;">
+          Code Quality and Team Collaboration
+        </h4>
+        <p><strong>Description:</strong> Contributing to long-term maintainability and scalability of the application.</p>
+        <p><strong>Achievement:</strong></p>
+        <ul style="list-style: disc; padding-left: 20px;">
+          <li>Refactored code to improve readability and consistency.</li>
+          <li>Standardized component structures for easier maintenance.</li>
+          <li>Consistently met development timelines in an agile environment.</li>
+        </ul>
+        <p><strong>Technologies:</strong> Astro, React.js, TypeScript</p>
+      </div>
+
+    </div>
+  `.trim(),
+      location: "Jakarta Timur, Indonesia",
+      duration: "2025 Aug - 2025 Dec",
+      compeny: "INDI Technology",
+    },
+    {
+      type: "Internship",
       position: "Full-Stack Web Developer",
       project:
         "ACP Website Application,KPI Website Application, Attendance System on Islamic Boarding School ",
