@@ -19,7 +19,8 @@ const projects = [
   {
     category: "Web App",
     title: "Dacapo (Elerning from korea)",
-    description: "Dacapo is an e-learning platform from Korea specifically designed for pilot learning. This application provides exam features, daily quizzes, and an interactive learning system. Dacapo supports four login methods, namely Google, Naver, Apple, and Kakao. In addition, integration with TossPayments allows users to make payments easily and securely.",
+    description:
+      "Dacapo is an e-learning platform from Korea specifically designed for pilot learning. This application provides exam features, daily quizzes, and an interactive learning system. Dacapo supports four login methods, namely Google, Naver, Apple, and Kakao. In addition, integration with TossPayments allows users to make payments easily and securely.",
     stack: [
       { name: "Next js" },
       { name: "SCSS" },
@@ -37,8 +38,77 @@ const projects = [
   },
   {
     category: "Web App",
+    title: "Hand Gesture Navigation using MediaPipe & Real-Time AI Detection",
+    description:
+      "This website is an interactive project that allows users to navigate pages using hand gestures in real-time, with the help of MediaPipe technology and AI to improve detection accuracy. Built using React, Next.js, and Tailwind CSS, and supported by GitHub Copilot Pro and a free domain from the GitHub Student Pack, this project aims to be a case study in the application of gesture recognition and human-computer interaction (HCI) on the modern web.",
+    stack: [
+      { name: "Next js" },
+      { name: "Tailwind" },
+      { name: "Typescript" },
+      { name: "Zustand" },
+      { name: "React Icons" },
+      { name: "Mediapipe" },
+    ],
+    image: "/assets/project/hand-gestur.png",
+    github: "https://github.com/ahmdriyo/navigation-hand-gesture-recognition",
+    demo: "https://www.handgesturenavigationwithmediapipe.live",
+  },
+  {
+    category: "Web App",
+    title: "Admin Dashboard Rocket Deli",
+    description:
+      "Admin Dashboard Rocket Deli is a web-based administration system designed to manage a South Korean restaurant efficiently. It allows administrators to handle menu management, orders, transactions, and operational data through a structured and user-friendly dashboard to support daily restaurant operations.",
+    stack: [
+      { name: "Next js" },
+      { name: "Tailwind" },
+      { name: "Typescript" },
+      { name: "Axios" },
+      { name: "Tanstack" },
+      { name: "Lucide React" },
+      { name: "Zod" },
+    ],
+    image: "/assets/project/admin-dashboard.png",
+  },
+  {
+    category: "Web App",
+    title: "SIPINTER – National ASN Assessment System",
+    description:
+      "SIPINTER is a national-scale web application designed to manage the Indonesian Civil Servant assessment process with high system complexity. The platform supports 11 distinct user roles, each with different permissions, responsibilities, and workflows. It handles end-to-end assessment processes including submission, multi-level verification, approval, rejection, and monitoring. The system features structured assessment pages, role-based dashboards, dynamic form validation, clear status indicators, controlled access based on roles, and data export functionality to ensure accuracy, transparency, and consistency in national ASN evaluations.",
+    stack: [
+      { name: "Astro" },
+      { name: "React" },
+      { name: "Golang" },
+      { name: "TypeScript" },
+      { name: "Tailwind CSS" },
+      { name: "Axios" },
+      { name: "TanStack Query" },
+      { name: "Zod" },
+    ],
+    image: "/assets/project/sipinter-bkn.png",
+  },
+  {
+    category: "Web App",
+    title: "Sistem Pendukung Keputusan Pemilihan Perumahan Terbaik",
+    description:
+      "This project is a web-based application designed to assist users in determining the most ideal housing options based on several assessment criteria such as price, distance to the city center, amenities, and transportation access. The system utilizes the Simple Additive Weighting (SAW) method, a weighted summation method widely used in multi-criteria decision-making (MCDM).",
+    stack: [
+      { name: "Next js" },
+      { name: "Tailwind" },
+      { name: "Typescript" },
+      { name: "Axios" },
+      { name: "Mysql" },
+      { name: "Radix UI" },
+      { name: "Prisma" },
+      { name: "Jspdf Autotable" },
+    ],
+    image: "/assets/project/spk-saw.png",
+    github: "https://github.com/ahmdriyo/spk-saw-perumahan2",
+  },
+  {
+    category: "Web App",
     title: "Sistem Informasi Transportasi Kalsel",
-    description: "South Kalimantan Transportation Information System is a website that provides complete information about transportation in the South Kalimantan region. This application is equipped with a geographic map feature (GeoMap) that displays terminal locations, as well as interactive navigation using gesture recognition, allowing users to navigate pages with just hand movements in real-time.",
+    description:
+      "South Kalimantan Transportation Information System is a website that provides complete information about transportation in the South Kalimantan region. This application is equipped with a geographic map feature (GeoMap) that displays terminal locations, as well as interactive navigation using gesture recognition, allowing users to navigate pages with just hand movements in real-time.",
     stack: [
       { name: "Next js" },
       { name: "Tailwind" },
@@ -56,7 +126,8 @@ const projects = [
   {
     category: "Web App",
     title: "Mahakreatif Studio",
-    description: "Mahakreatif Studio is a freelance platform specifically for students, designed while participating in the Independent Campus Entrepreneurship (WMK) program. This website is a creative platform for students to offer digital services or projects, build portfolios, and connect with potential clients professionally and easily.",
+    description:
+      "Mahakreatif Studio is a freelance platform specifically for students, designed while participating in the Independent Campus Entrepreneurship (WMK) program. This website is a creative platform for students to offer digital services or projects, build portfolios, and connect with potential clients professionally and easily.",
     stack: [
       { name: "Next js" },
       { name: "Tailwind" },
@@ -75,7 +146,8 @@ const projects = [
   {
     category: "Web App",
     title: "Company Profile",
-    description: "This company profile website was developed using Copilot Agent from GitHub, where 90% of the code was written by Ai from AI prompts in less than 1 hour. Manual adjustments were made to adjust the design and content. This website is open-source and free to be developed according to your needs.",
+    description:
+      "This company profile website was developed using Copilot Agent from GitHub, where 90% of the code was written by Ai from AI prompts in less than 1 hour. Manual adjustments were made to adjust the design and content. This website is open-source and free to be developed according to your needs.",
     stack: [
       { name: "Next js" },
       { name: "Tailwind" },
@@ -90,7 +162,8 @@ const projects = [
   {
     category: "Web App",
     title: "Website Trayek Angkutan Umum.",
-    description: "Public Transportation Route Website is a web-based platform that provides route information for various types of public transportation. This website is designed to make it easier to see available transportation routes, especially in areas with many transportation options.",
+    description:
+      "Public Transportation Route Website is a web-based platform that provides route information for various types of public transportation. This website is designed to make it easier to see available transportation routes, especially in areas with many transportation options.",
     stack: [
       { name: "Html" },
       { name: "Css" },
@@ -106,7 +179,8 @@ const projects = [
   {
     category: "Web App",
     title: "Web GIS Kampus di Barito Kuala.",
-    description: "Web GIS Campus in Barito Kuala is a website based on Geographic Information System (GIS) that displays details of campuses in the Barito Kuala area. This application is equipped with an interactive map that marks the location of each campus accurately using markers.",
+    description:
+      "Web GIS Campus in Barito Kuala is a website based on Geographic Information System (GIS) that displays details of campuses in the Barito Kuala area. This application is equipped with an interactive map that marks the location of each campus accurately using markers.",
     stack: [
       { name: "Html" },
       { name: "Css" },
@@ -123,7 +197,8 @@ const projects = [
   {
     category: "Web App",
     title: "Website Trayek Kereta.",
-    description: "Train Track Website is an informative website that displays train routes or tracks. Users can see the train tracks visually and clearly, helping in planning a trip or simply recognizing the available train transportation network.",
+    description:
+      "Train Track Website is an informative website that displays train routes or tracks. Users can see the train tracks visually and clearly, helping in planning a trip or simply recognizing the available train transportation network.",
     stack: [
       { name: "Html" },
       { name: "Css" },
@@ -139,7 +214,8 @@ const projects = [
   {
     category: "Web App",
     title: "Website Events Bootcamp.",
-    description: "This website is created to display bootcamp event information such as schedules, speakers, and participant registration. Designed with a modern and user-friendly appearance so that users can easily access information.",
+    description:
+      "This website is created to display bootcamp event information such as schedules, speakers, and participant registration. Designed with a modern and user-friendly appearance so that users can easily access information.",
     stack: [
       { name: "Html" },
       { name: "Css" },
@@ -154,7 +230,8 @@ const projects = [
   {
     category: "Web App",
     title: "Website Admin Events Bootcamp.",
-    description: "is an admin dashboard to manage bootcamp event data, starting from adding/editing events, participant management, to viewing statistical data. Made using React and Redux.",
+    description:
+      "is an admin dashboard to manage bootcamp event data, starting from adding/editing events, participant management, to viewing statistical data. Made using React and Redux.",
     stack: [
       { name: "Html" },
       { name: "Css" },
@@ -171,7 +248,8 @@ const projects = [
   {
     category: "Web App Clone",
     title: "Website Replika dari WhatsApp Download.",
-    description: "This website is a replication of the official WhatsApp download page display. This project was created as a front-end exercise to deepen the understanding of HTML, CSS, and JavaScript structures",
+    description:
+      "This website is a replication of the official WhatsApp download page display. This project was created as a front-end exercise to deepen the understanding of HTML, CSS, and JavaScript structures",
     stack: [{ name: "Html" }, { name: "Css" }, { name: "Javascript" }],
     image: "/assets/project/cloneWa.png",
     github: "https://github.com/ahmdriyo/wa-clone.git",
@@ -179,7 +257,8 @@ const projects = [
   {
     category: "Web App",
     title: "Website Pemutar Musik.",
-    description: "A music player web application that allows users to select songs and control playback (play, pause, stop). Built with HTML, CSS, and JavaScript as an interactive application creation exercise.",
+    description:
+      "A music player web application that allows users to select songs and control playback (play, pause, stop). Built with HTML, CSS, and JavaScript as an interactive application creation exercise.",
     stack: [{ name: "Html" }, { name: "Css" }, { name: "Javascript" }],
     image: "/assets/project/musik.png",
     github: "https://github.com/ahmdriyo/pemutarMusik.git",
@@ -187,7 +266,8 @@ const projects = [
   {
     category: "Mobile App",
     title: "Health Fit, Aplikasi Kosultasi kesehatan berbasis chat.",
-    description: "A mobile application that allows users to consult directly with medical personnel through a chat feature. Designed to provide easy access to digital health services.",
+    description:
+      "A mobile application that allows users to consult directly with medical personnel through a chat feature. Designed to provide easy access to digital health services.",
     stack: [
       { name: "React Native" },
       { name: "Javascript" },
@@ -203,7 +283,8 @@ const projects = [
   {
     category: "Mobile App",
     title: "Kalori Fit, Aplikasi penghitung dan pencatat asupan kalori harian.",
-    description: "Aplikasi untuk mencatat dan memantau asupan kalori harian berdasarkan makanan yang dikonsumsi. Cocok untuk kamu yang sedang diet atau menjaga pola makan sehat.",
+    description:
+      "Aplikasi untuk mencatat dan memantau asupan kalori harian berdasarkan makanan yang dikonsumsi. Cocok untuk kamu yang sedang diet atau menjaga pola makan sehat.",
     stack: [
       { name: "React Native" },
       { name: "Javascript" },
@@ -220,7 +301,8 @@ const projects = [
   {
     category: "Mobile App",
     title: "Aplikasi Kuis Tes Psikologi.",
-    description: "A quiz-based application to help users recognize psychological conditions through a series of questions arranged in the form of a simple test.",
+    description:
+      "A quiz-based application to help users recognize psychological conditions through a series of questions arranged in the form of a simple test.",
     stack: [
       { name: "React Native" },
       { name: "Javascript" },
@@ -235,7 +317,8 @@ const projects = [
   {
     category: "Mobile App",
     title: "Aplikasi Chat Saling bertukar pesan.",
-    description: "A simple chat application that allows users to send and receive messages to each other in real-time using Firebase as the backend.",
+    description:
+      "A simple chat application that allows users to send and receive messages to each other in real-time using Firebase as the backend.",
     stack: [
       { name: "React Native" },
       { name: "Javascript" },
