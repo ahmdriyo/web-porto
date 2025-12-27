@@ -1,15 +1,15 @@
-"use client"
+"use client";
 import CountUp from "react-countup";
 const stats = [
   {
-    num : 3,
-    text : "Years Journey as a Software Developer"
+    num: 3,
+    text: "Years Journey as a Software Developer",
   },
   {
-    num : 17,
-    text : "Independent project completed"
+    num: 19,
+    text: "Independent project completed",
   },
-]
+];
 const Stats = () => {
   return (
     <section>
@@ -41,7 +41,6 @@ const Stats = () => {
       </div>
     </section>
   );
-  
-}
+};
 
-export default Stats
+export default Stats;

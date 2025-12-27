@@ -18,6 +18,10 @@ const certificate = {
       image: "/assets/certificate/desain.png",
     },
     {
+      title: "Magang Berdampak",
+      image: "/assets/certificate/magang-berdampak.png",
+    },
+    {
       title: "Backend Web Developer(NestJS)",
       image: "/assets/certificate/nest.png",
     },
