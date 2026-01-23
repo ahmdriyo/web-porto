@@ -22,6 +22,10 @@ const certificate = {
       image: "/assets/certificate/magang-berdampak.png",
     },
     {
+      title: "Magang Berdampak Kepersertaan",
+      image: "/assets/certificate/magangBerdampak.png",
+    },
+    {
       title: "Backend Web Developer(NestJS)",
       image: "/assets/certificate/nest.png",
     },
