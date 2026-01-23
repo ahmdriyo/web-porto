@@ -1,3 +1,4 @@
+"use client";
 import React, { useRef, useState, useEffect, ReactNode } from "react";
 import { motion } from "framer-motion";
 
@@ -31,9 +32,9 @@ const SlideTabs: React.FC = () => {
     const currentScrollY = window.scrollY;
 
     if (currentScrollY > prevScrollY.current) {
-      setIsVisible(false); 
+      setIsVisible(false);
     } else {
-      setIsVisible(true); 
+      setIsVisible(true);
     }
     prevScrollY.current = currentScrollY;
 
@@ -86,18 +87,24 @@ const SlideTabs: React.FC = () => {
   );
 };
 
-
 interface TabProps {
   children: ReactNode;
   setPosition: React.Dispatch<React.SetStateAction<Position>>;
   path: string;
   activeTab: string;
 }
-const Tab: React.FC<TabProps> = ({ children, setPosition, path, activeTab }) => {
+const Tab: React.FC<TabProps> = ({
+  children,
+  setPosition,
+  path,
+  activeTab,
+}) => {
   const ref = useRef<HTMLLIElement>(null);
   const isActive = `#${activeTab}` === path;
 
-  const handleClick = (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+  const handleClick = (
+    event: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
+  ) => {
     event.preventDefault(); // Mencegah scroll default
     const targetId = path.replace("#", "");
     const targetElement = document.getElementById(targetId);
@@ -128,7 +135,6 @@ const Tab: React.FC<TabProps> = ({ children, setPosition, path, activeTab }) => 
     </a>
   );
 };
-
 
 interface CursorProps {
   position: Position;
