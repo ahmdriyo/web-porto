@@ -12,7 +12,7 @@ const experience = {
   items: [
     {
       type: "Internship",
-      position: "Frontend Developer",
+      position: "Full-Stack Web Developer",
       project: "National Civil Servant Assessment System",
       description: `
     <div style="padding-left: 10px;">
