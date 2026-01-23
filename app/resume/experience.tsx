@@ -143,8 +143,29 @@ const experience = {
         </div>
       `.trim(),
       location: "South Korea",
-      duration: "2025 Jan - Present",
+      duration: "2025 Jan - 2025 Juni",
       compeny: "PT. Healstation Indonesia",
+    },
+    {
+      type: "Freelance ",
+      position: "Frontend Developer",
+      project: "Admin Dashboard Rocket Deli",
+      description: `
+        <div style="padding-left: 10px;">
+          <h4 style="font-weight: 600;  color: #0ed145; font-size: 1.1rem; margin-bottom: 4px;"">
+            Admin Dashboard Rocket Deli
+          </h4>
+          <ul style="list-style: disc; padding-left: 20px;">
+            <li>Developed an admin dashboard for menu management, orders, transactions, and operational data.</li>
+            <li>Building an organized data structure and display to support daily restaurant operations.</li>
+            <li>Implementing form validation and data flow to ensure more accurate admin input.</li>
+            <li>Integrating APIs for real-time data management.</li>
+          </ul>
+        </div>
+      `.trim(),
+      location: "South Korea",
+      duration: "2025 Oct - 2025 Des",
+      compeny: "-",
     },
     {
       type: "Freelance ",
