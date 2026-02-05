@@ -15,69 +15,36 @@ const experience = {
       position: "Full-Stack Web Developer",
       project: "National Civil Servant Assessment System",
       description: `
-    <div style="padding-left: 10px;">
+<div style="padding-left: 10px;">
 
-      <div>
-        <h2 style="font-weight: 600; color: #0ed145; font-size: 1.1rem; margin-bottom: 4px;">
-          National-Scale Assessment System Development
-        </h2>
-        <p><strong>Description:</strong> Developing and improving a national-scale assessment system for Indonesian Civil Servants with complex workflows and multiple user roles.</p>
-        <p><strong>Achievement:</strong></p>
-        <ul style="list-style: disc; padding-left: 20px;">
-          <li>Built structured assessment pages aligned with real business rules.</li>
-          <li>Implemented verification, approval, and rejection flows based on user roles.</li>
-          <li>Developed role-based dashboards to improve user clarity and efficiency.</li>
-        </ul>
-        <p><strong>Technologies:</strong> Astro, React.js, TypeScript, Golang, Tailwind CSS</p>
-      </div>
+  <div>
+    <h2 style="font-weight: 600; color: #0ed145; font-size: 1.1rem; margin-bottom: 4px;">
+      National-Scale Assessment System Development
+    </h2>
+    <p><strong>Description:</strong> Designed, developed, and enhanced a national-scale assessment system for Indonesian Civil Servants, handling complex workflows, multi-role access control, and high data accuracy requirements. Focused on building reliable features, improving usability, and ensuring seamless integration with backend services.</p>
 
-      <div style="margin-top: 12px">
-        <h4 style="font-weight: 600; color: #0ed145; font-size: 1.1rem; margin-bottom: 4px;">
-          User Interface and Experience Enhancement
-        </h4>
-        <p><strong>Description:</strong> Improving usability and reliability of the system through responsive and user-focused UI components.</p>
-        <p><strong>Achievement:</strong></p>
-        <ul style="list-style: disc; padding-left: 20px;">
-          <li>Created dynamic forms with validation to reduce user input errors.</li>
-          <li>Implemented responsive loading states and clear status indicators.</li>
-          <li>Improved notification handling for better user feedback.</li>
-        </ul>
-        <p><strong>Technologies:</strong> React.js, TypeScript, Tailwind CSS</p>
-      </div>
+    <p><strong>Achievement:</strong></p>
+    <ul style="list-style: disc; padding-left: 20px;">
+      <li>Built structured assessment pages aligned with real business rules and governance processes.</li>
+      <li>Implemented verification, approval, and rejection workflows based on role-based permissions.</li>
+      <li>Developed role-based dashboards to improve operational clarity and user efficiency.</li>
+      <li>Created dynamic forms with strong validation to minimize user input errors.</li>
+      <li>Enhanced user experience through responsive loading states, clear status indicators, and improved notification handling.</li>
+      <li>Implemented Excel export functionality for large-scale assessment data.</li>
+      <li>Optimized data validation and management to ensure higher system reliability.</li>
+      <li>Integrated REST APIs and securely managed authentication tokens in collaboration with backend teams.</li>
+      <li>Refactored codebases and standardized component architecture to improve maintainability and scalability.</li>
+      <li>Consistently delivered features on schedule within an agile development environment.</li>
+    </ul>
 
-      <div style="margin-top: 12px">
-        <h4 style="font-weight: 600; color: #0ed145; font-size: 1.1rem; margin-bottom: 4px;">
-          Data Management and System Optimization
-        </h4>
-        <p><strong>Description:</strong> Ensuring accurate data handling and smooth system integration with backend services.</p>
-        <p><strong>Achievement:</strong></p>
-        <ul style="list-style: disc; padding-left: 20px;">
-          <li>Implemented Excel export functionality for assessment data.</li>
-          <li>Optimized field validation and data management for higher accuracy.</li>
-          <li>Integrated APIs and managed authentication tokens with backend teams.</li>
-        </ul>
-        <p><strong>Technologies:</strong> React.js, TypeScript, REST API</p>
-      </div>
+    <p><strong>Technologies:</strong> Astro, React.js, Tanstack Query, TypeScript, Shadcn, Golang, Tailwind CSS</p>
+  </div>
 
-      <div style="margin-top: 12px">
-        <h4 style="font-weight: 600; color: #0ed145; font-size: 1.1rem; margin-bottom: 4px;">
-          Code Quality and Team Collaboration
-        </h4>
-        <p><strong>Description:</strong> Contributing to long-term maintainability and scalability of the application.</p>
-        <p><strong>Achievement:</strong></p>
-        <ul style="list-style: disc; padding-left: 20px;">
-          <li>Refactored code to improve readability and consistency.</li>
-          <li>Standardized component structures for easier maintenance.</li>
-          <li>Consistently met development timelines in an agile environment.</li>
-        </ul>
-        <p><strong>Technologies:</strong> Astro, React.js, TypeScript</p>
-      </div>
-
-    </div>
-  `.trim(),
+</div>
+`.trim(),
       location: "Jakarta Timur, Indonesia",
       duration: "2025 Aug - 2025 Dec",
-      compeny: "INDI Technology",
+      compeny: "PT Indi Teknokreasi Internasional",
     },
     {
       type: "Internship",
@@ -133,6 +100,8 @@ const experience = {
           <h4 style="font-weight: 600;  color: #0ed145; font-size: 1.1rem; margin-bottom: 4px;">
             Dacapo
           </h4>
+          <p><strong>Description: Dacapo is an e-learning website that provides training for South Korean pilots.</strong> </p>
+          <p><strong>Achievement:</strong></p>
           <ul style="list-style: disc; padding-left: 20px;">
             <li>Developed responsive user interfaces using <strong>Next.js App Router</strong> and <strong>SCSS</strong> for optimal performance.</li>
             <li>Collaborated with backend and design teams to implement user-friendly flows for onboarding and account access.</li>
@@ -140,6 +109,7 @@ const experience = {
             <li>Integrated four login methods: <strong>Apple</strong>, <strong>Naver</strong>, <strong>Google</strong>, and <strong>Kakao</strong>, providing flexible and localized authentication options for Korean users.</li>
             <li>Connected and configured <strong>TossPayments</strong>, a popular Korean payment gateway, to support seamless online transactions.</li>
           </ul>
+          <p><strong>Technologies:</strong> Next.js, Tanstack Query, TypeScript, Antd, Sass</p>
         </div>
       `.trim(),
       location: "South Korea",
@@ -155,12 +125,14 @@ const experience = {
           <h4 style="font-weight: 600;  color: #0ed145; font-size: 1.1rem; margin-bottom: 4px;"">
             Admin Dashboard Rocket Deli
           </h4>
+          <p><strong>Description: Rocket Deli Admin Dashboard is a web-based administration system for managing South Korean restaurant operations.</strong> </p>
           <ul style="list-style: disc; padding-left: 20px;">
             <li>Developed an admin dashboard for menu management, orders, transactions, and operational data.</li>
             <li>Building an organized data structure and display to support daily restaurant operations.</li>
             <li>Implementing form validation and data flow to ensure more accurate admin input.</li>
             <li>Integrating APIs for real-time data management.</li>
           </ul>
+          <p><strong>Technologies:</strong> Next.js, Tanstack Query, TypeScript, Tailwind CSS, Shadcn</p>
         </div>
       `.trim(),
       location: "South Korea",
@@ -181,6 +153,7 @@ const experience = {
             <li>Implementing technologies such as <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>Next.js</strong>, <strong>Tailwind</strong>, and <strong>Firebase</strong> to build responsive and dynamic        websites.</li>
             <li>Manage the entire project development cycle from design, coding, testing, to deployment.</li>
           </ul>
+          <p><strong>Technologies:</strong> Next.js, Firebase, TypeScript, Tailwind CSS</p>
         </div>
       `.trim(),
       location: "Banjarmasin, Indonesia",
