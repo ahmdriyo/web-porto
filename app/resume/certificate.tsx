@@ -14,44 +14,32 @@ const certificate = {
       image: "/assets/certificate/mren.png",
     },
     {
-      title: "Desain Web",
-      image: "/assets/certificate/desain.png",
+      title: "Backend REST API(NestJS)",
+      image: "/assets/certificate/nest.png",
+    },
+    {
+      title: "Fullstack Next.js App",
+      image: "/assets/certificate/Fullstack-Next-JS.png",
     },
     {
       title: "Magang Berdampak",
       image: "/assets/certificate/magang-berdampak.png",
     },
     {
-      title: "Magang Berdampak Kepersertaan",
-      image: "/assets/certificate/magangBerdampak.png",
-    },
-    {
-      title: "Backend Web Developer(NestJS)",
-      image: "/assets/certificate/nest.png",
-    },
-    {
-      title: "Literasi Digital",
-      image: "/assets/certificate/literasi.png",
+      title: "UI/UX Designer",
+      image: "/assets/certificate/desain.png",
     },
     {
       title: "Kewirausahan Industri",
       image: "/assets/certificate/wmkindustri.png",
     },
     {
-      title: "Jaringan Komputer",
-      image: "/assets/certificate/jarkom.png",
-    },
-    {
       title: "Algoritma dan Pemrograman",
       image: "/assets/certificate/algo2.png",
     },
     {
-      title: "Pemogramaaan C",
+      title: "Pemrograman C",
       image: "/assets/certificate/c.png",
-    },
-    {
-      title: "PPKMB",
-      image: "/assets/certificate/wmk.jpg",
     },
   ],
 };
