@@ -88,6 +88,21 @@ const projects = [
   },
   {
     category: "Web App",
+    title: "KapalIndo",
+    description:
+      "KapalIndo is a web application designed to provide comprehensive information about ships in Indonesia. This platform offers detailed data on various types of vessels, including passenger ships, cargo ships, and fishing boats. Users can access information such as ship specifications, ownership details, registration status, and operational history. KapalIndo serves as a valuable resource for maritime professionals, researchers, and anyone interested in the Indonesian shipping industry.",
+    stack: [
+      { name: "Astro JS" },
+      { name: "React JS" },
+      { name: "Vue JS" },
+      { name: "Tailwind" },
+      { name: "Typescript" },
+    ],
+    image: "/assets/project/kapalindo.png",
+    demo: "https://kapalindo-nusantara.vercel.app",
+  },
+  {
+    category: "Web App",
     title: "Sistem Pendukung Keputusan Pemilihan Perumahan Terbaik",
     description:
       "This project is a web-based application designed to assist users in determining the most ideal housing options based on several assessment criteria such as price, distance to the city center, amenities, and transportation access. The system utilizes the Simple Additive Weighting (SAW) method, a weighted summation method widely used in multi-criteria decision-making (MCDM).",
