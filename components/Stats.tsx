@@ -6,8 +6,8 @@ const stats = [
     text: "Years Journey as a Software Developer",
   },
   {
-    num: 19,
-    text: "Independent project completed",
+    num: 20,
+    text: "Independent & Real project completed",
   },
 ];
 const Stats = () => {

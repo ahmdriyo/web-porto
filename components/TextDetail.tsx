@@ -10,13 +10,13 @@ const TextDetail = () => {
         transition: { delay: 2.4, duration: 0.5, ease: "easeIn" },
       }}
     >
-      <span className="text-xl">Web Developer & Mobile Developer</span>
+      <span className="text-xl">Full Stack Developer & Mobile Developer</span>
       <p className="max-w-[500px] mb-9 text-white/80">
-        I am an Informatics Engineering student passionate about web
-        development, with a strong focus on frontend. While I also explore
-        mobile and backend development, I enjoy creating intuitive and engaging
-        user interfaces and continuously seek to grow through real-world
-        projects.{" "}
+        I am an Informatics Engineering student and a Full Stack Developer with
+        experience in frontend and backend development. I enjoy building
+        intuitive and engaging user interfaces while also developing robust
+        server-side logic. In addition, I actively explore mobile development
+        and continuously grow my skills through real-world projects.{" "}
       </p>
     </motion.section>
   );
