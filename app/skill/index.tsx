@@ -1,35 +1,36 @@
 "use client";
 
 import { IoIosDesktop } from "react-icons/io";
-import { IoPhonePortraitOutline } from "react-icons/io5";
 import { MdDesignServices } from "react-icons/md";
 import React from "react";
 
 const services = [
   {
     num: "01",
-    title: "Web Developer",
+    title: "Full Stack Developer",
     description:
-      "I have expertise in various modern technologies, including HTML5, CSS3, SCSS, JavaScript, Typescript, React Js, Next Js, Laravel, Node.js, Nest Js, Express.js, Tailwind CSS, API Integration.",
+      "Experienced in building modern web applications using HTML5, CSS3, SCSS, JavaScript, TypeScript, React, Next.js, Node.js, NestJS, Express, Laravel, Tailwind CSS, and API integration.",
     icon: <IoIosDesktop className="text-primary text-3xl" />,
   },
   {
     num: "02",
-    title: "Mobile Developer",
+    title: "DevOps",
     description:
-      "I have expertise in a variety of modern technologies, including React Native, Expo, API Integration, Firebase, Redux, and Axios.",
-    icon: <IoPhonePortraitOutline className="text-primary text-3xl" />,
+      "Skilled in managing deployment pipelines, containerization, and cloud environments to ensure scalable, secure, and reliable application delivery.",
+    icon: <FaServer className="text-primary text-3xl" />,
   },
   {
     num: "03",
-    title: "UI&UX",
-    description: "I have expertise in Figma, Canva",
+    title: "UI/UX",
+    description:
+      "Able to design clean and user-focused interfaces using Figma and Canva to enhance product usability.",
     icon: <MdDesignServices className="text-primary text-3xl" />,
   },
 ];
 
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { FaServer } from "react-icons/fa";
 const SkillPage = () => {
   const controls = useAnimation();
   const [ref, inView] = useInView({

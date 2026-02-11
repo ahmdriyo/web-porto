@@ -1,12 +1,14 @@
 "use client";
 import {
   FaHtml5,
-  FaCss3,
   FaJs,
   FaReact,
   FaFigma,
   FaNodeJs,
   FaGitAlt,
+  FaCss3Alt,
+  FaDocker,
+  FaAws,
 } from "react-icons/fa";
 import {
   SiNextdotjs,
@@ -20,8 +22,9 @@ import {
   SiPostgresql,
   SiLaravel,
   SiNestjs,
+  SiAstro,
+  SiGithubactions,
 } from "react-icons/si";
-import { TbBrandReactNative } from "react-icons/tb";
 import { motion } from "framer-motion";
 import { TabsContent } from "@/components/ui/tabs";
 import {
@@ -31,86 +34,37 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 
-const skills = {
+export const skills = {
   title: "My Skills",
   skillList: [
-    {
-      name: "Html 5",
-      icon: <FaHtml5 />,
-    },
-    {
-      name: "Css 3",
-      icon: <FaCss3 />,
-    },
-    {
-      name: "SCSS",
-      icon: <SiSass />,
-    },
-    {
-      name: "Javascript",
-      icon: <FaJs />,
-    },
-    {
-      name: "Typescript",
-      icon: <SiTypescript />,
-    },
-    {
-      name: "Git",
-      icon: <FaGitAlt />,
-    },
-    {
-      name: "Supabase",
-      icon: <SiSupabase />,
-    },
-    {
-      name: "React",
-      icon: <FaReact />,
-    },
-    {
-      name: "Tailwind",
-      icon: <SiTailwindcss />,
-    },
-    {
-      name: "Next js",
-      icon: <SiNextdotjs />,
-    },
-    {
-      name: "Laravel",
-      icon: <SiLaravel />,
-    },
-    {
-      name: "MongoDB",
-      icon: <SiMongodb />,
-    },
-    {
-      name: "Mysql",
-      icon: <SiMysql />,
-    },
-    {
-      name: "Postgresql",
-      icon: <SiPostgresql  />,
-    },
-    {
-      name: "Figma",
-      icon: <FaFigma />,
-    },
-    {
-      name: "Node js",
-      icon: <FaNodeJs />,
-    },
-    {
-      name: "Nest js",
-      icon: <SiNestjs />,
-    },
+    { name: "HTML5", icon: <FaHtml5 /> },
+    { name: "CSS3", icon: <FaCss3Alt /> },
+    { name: "Sass / SCSS", icon: <SiSass /> },
+    { name: "JavaScript", icon: <FaJs /> },
+    { name: "TypeScript", icon: <SiTypescript /> },
 
-    {
-      name: "React Native",
-      icon: <TbBrandReactNative />,
-    },
-    {
-      name: "Firebase",
-      icon: <SiFirebase />,
-    },
+    { name: "React", icon: <FaReact /> },
+    { name: "Next.js", icon: <SiNextdotjs /> },
+    { name: "Astro", icon: <SiAstro /> },
+    { name: "Tailwind CSS", icon: <SiTailwindcss /> },
+
+    { name: "Node.js", icon: <FaNodeJs /> },
+    { name: "NestJS", icon: <SiNestjs /> },
+    { name: "Laravel", icon: <SiLaravel /> },
+
+    { name: "MongoDB", icon: <SiMongodb /> },
+    { name: "MySQL", icon: <SiMysql /> },
+    { name: "PostgreSQL", icon: <SiPostgresql /> },
+
+    { name: "Git", icon: <FaGitAlt /> },
+    { name: "GitHub Actions", icon: <SiGithubactions /> },
+    { name: "Docker", icon: <FaDocker /> },
+    { name: "AWS", icon: <FaAws /> },
+
+    { name: "Supabase", icon: <SiSupabase /> },
+    { name: "Firebase", icon: <SiFirebase /> },
+
+    { name: "Figma", icon: <FaFigma /> },
   ],
 };
 const container = {
@@ -137,7 +91,9 @@ const SkillsTabsContent = () => {
     <TabsContent className=" w-full pb-4" value="skills">
       <div className="flex flex-col gap-[30px]">
         <div className="flex flex-col gap-[30px] text-center xl:text-left">
-          <h3 className="text-4xl font-extrabold text-accent drop-shadow-lg">{skills.title}</h3>
+          <h3 className="text-4xl font-extrabold text-accent drop-shadow-lg">
+            {skills.title}
+          </h3>
           <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0"></p>
         </div>
         <motion.ul
