@@ -59,7 +59,7 @@ const SlideTabs: React.FC = () => {
       initial={{ y: 0 }}
       animate={{ y: isVisible ? 0 : -100 }}
       transition={{ duration: 0.3 }}
-      className="fixed top-4 left-0 right-0 z-50 mx-auto flex w-fit rounded-full border-[1px] border-[#ffffff] bg-[#1c1c22d0] p-1"
+      className="fixed top-4 left-0 right-0 z-50 mx-auto flex w-fit rounded-full border-[1px] border-[#ffffff] bg-[#1c1c22]/80 backdrop-blur-xl p-1 shadow-[0_8px_32px_0_rgba(0,255,153,0.15)]"
       onMouseLeave={() => {
         setPosition((pv) => ({
           ...pv,
