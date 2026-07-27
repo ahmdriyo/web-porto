@@ -3,8 +3,8 @@ import Socials from '@/components/Socials'
 import Stats from '@/components/Stats'
 import TextDetail from '@/components/TextDetail'
 import TextMotion from '@/components/TextMotion'
+import TrackingLink from '@/components/tracking/tracking-link'
 import { Button } from '@/components/ui/button'
-import Link from 'next/link'
 import React from 'react'
 import { FiDownload } from 'react-icons/fi'
 
@@ -22,12 +22,14 @@ const HomePage = () => {
                 size="lg"
                 className=" uppercase flex items-center gap-2 border-2"
               >
-                <Link
+                <TrackingLink
+                  actionKey="download_cv"
                   target="_blank"
+                  rel="noopener noreferrer"
                   href="https://drive.google.com/drive/folders/1l5kMiaBAmzvIqE0yyexBJ_PbbfZcfLxL?usp=sharing"
                 >
                   Download CV
-                </Link>
+                </TrackingLink>
                 <FiDownload className=" text-xl" />
               </Button>
               <div className="mb-8 xl:mb-0">
