@@ -76,6 +76,9 @@ export const VISITOR_HEADERS = [
   "language",
   "ip_hash",
   "visited_at",
+  "city",
+  "region",
+  "country",
 ] as const;
 
 export const CLICK_SUMMARY_HEADERS = [
@@ -98,4 +101,7 @@ export const CLICK_HISTORY_HEADERS = [
   "browser",
   "operating_system",
   "clicked_at",
+  "city",
+  "region",
+  "country",
 ] as const;

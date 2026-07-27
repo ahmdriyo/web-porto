@@ -5,7 +5,11 @@ import {
   visitPayloadSchema,
 } from "../types/tracking";
 import { isTrackingRateLimited } from "../server/services/tracking-rate-limit.service";
-import { formatTrackingTimestamp } from "../server/services/tracking.service";
+import { getTrackingDevice } from "../server/services/tracking-device.service";
+import {
+  formatTrackingTimestamp,
+  getTrackingLocation,
+} from "../server/services/tracking.service";
 
 assert.equal(
   visitPayloadSchema.safeParse({ pagePath: "/", unexpected: true }).success,
@@ -38,6 +42,22 @@ assert.equal(isTrackingRateLimited("check", 2), true);
 assert.equal(
   formatTrackingTimestamp(new Date("2026-07-26T17:21:00.000Z")),
   "27/07/2026 1:21:00",
+);
+assert.equal(
+  getTrackingDevice(
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0.0.0 Safari/537.36",
+  ).operatingSystem,
+  "Windows 10",
+);
+assert.deepEqual(
+  getTrackingLocation(
+    new Headers({
+      "x-vercel-ip-city": "Banjarmasin",
+      "x-vercel-ip-country-region": "KS",
+      "x-vercel-ip-country": "ID",
+    }),
+  ),
+  { city: "Banjarmasin", region: "KS", country: "ID" },
 );
 
 console.log("Tracking validation checks passed.");

@@ -100,6 +100,10 @@ async function setup(): Promise<void> {
     });
     const current = rowsFrom(headerResponse.data.values)[0] || [];
 
+    const matchingPrefix = current.every(
+      (header, index) => header === spec.headers[index],
+    );
+
     if (!current.length) {
       await sheets.spreadsheets.values.update({
         spreadsheetId: env.spreadsheetId,
@@ -107,13 +111,18 @@ async function setup(): Promise<void> {
         valueInputOption: "RAW",
         requestBody: { values: [[...spec.headers]] },
       });
-    } else if (
-      current.length !== spec.headers.length ||
-      current.some((header, index) => header !== spec.headers[index])
-    ) {
+    } else if (!matchingPrefix || current.length > spec.headers.length) {
       throw new SafeSetupError(
         `Header mismatch in the ${spec.role} tab. Existing data was not changed.`,
       );
+    } else if (current.length < spec.headers.length) {
+      const startColumn = String.fromCharCode(65 + current.length);
+      await sheets.spreadsheets.values.update({
+        spreadsheetId: env.spreadsheetId,
+        range: `${quoteSheetName(spec.title)}!${startColumn}1`,
+        valueInputOption: "RAW",
+        requestBody: { values: [[...spec.headers.slice(current.length)]] },
+      });
     }
   }
 

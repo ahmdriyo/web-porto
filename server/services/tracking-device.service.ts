@@ -30,6 +30,8 @@ export function getTrackingDevice(userAgent: string | null): TrackingDevice {
   return {
     deviceType,
     browser: result.browser.name || "unknown",
-    operatingSystem: result.os.name || "unknown",
+    operatingSystem:
+      [result.os.name, result.os.version].filter(Boolean).join(" ") ||
+      "unknown",
   };
 }

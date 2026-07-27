@@ -34,6 +34,35 @@ export function formatTrackingTimestamp(date: Date): string {
   return `${parts.day}/${parts.month}/${parts.year} ${Number(parts.hour)}:${parts.minute}:${parts.second}`;
 }
 
+function decodeLocation(value: string | null): string {
+  if (!value) return "unknown";
+
+  try {
+    return (
+      decodeURIComponent(value).replace(/\p{C}/gu, "").trim().slice(0, 100) ||
+      "unknown"
+    );
+  } catch {
+    return value.replace(/\p{C}/gu, "").trim().slice(0, 100) || "unknown";
+  }
+}
+
+export function getTrackingLocation(headers: Headers) {
+  return {
+    city: decodeLocation(
+      headers.get("x-vercel-ip-city") || headers.get("cf-ipcity"),
+    ),
+    region: decodeLocation(
+      headers.get("x-vercel-ip-country-region") ||
+        headers.get("cf-region") ||
+        headers.get("cf-region-code"),
+    ),
+    country: decodeLocation(
+      headers.get("x-vercel-ip-country") || headers.get("cf-ipcountry"),
+    ),
+  };
+}
+
 function withoutQueryOrHash(value: string | undefined): string {
   if (!value) return "";
 
@@ -53,8 +82,9 @@ export async function recordVisit(
 ): Promise<void> {
   const env = getTrackingEnv();
   const device = getTrackingDevice(request.headers.get("user-agent"));
+  const location = getTrackingLocation(request.headers);
 
-  await appendTrackingRow(env.visitorsTab, "A:K", [
+  await appendTrackingRow(env.visitorsTab, "A:N", [
     randomUUID(),
     identity.visitorId,
     identity.sessionId,
@@ -66,6 +96,9 @@ export async function recordVisit(
     payload.language || "",
     identity.ipHash,
     formatTrackingTimestamp(new Date()),
+    location.city,
+    location.region,
+    location.country,
   ]);
 }
 
@@ -77,8 +110,9 @@ export async function recordClick(
   const env = getTrackingEnv();
   const action = TRACKING_ACTIONS[payload.actionKey];
   const device = getTrackingDevice(request.headers.get("user-agent"));
+  const location = getTrackingLocation(request.headers);
 
-  await appendTrackingRow(env.clickHistoryTab, "A:L", [
+  await appendTrackingRow(env.clickHistoryTab, "A:O", [
     randomUUID(),
     identity.visitorId,
     identity.sessionId,
@@ -91,6 +125,9 @@ export async function recordClick(
     device.browser,
     device.operatingSystem,
     formatTrackingTimestamp(new Date()),
+    location.city,
+    location.region,
+    location.country,
   ]);
 }
 
