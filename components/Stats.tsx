@@ -2,11 +2,11 @@
 import CountUp from "react-countup";
 const stats = [
   {
-    num: 3,
+    num: 2,
     text: "Years Journey as a Software Developer",
   },
   {
-    num: 12,
+    num: 18,
     text: "Independent & Real project completed",
   },
 ];
@@ -18,7 +18,7 @@ const Stats = () => {
           {stats.map((item, index) => {
             return (
               <div
-                className="flex-1 flex gap-3 items-center justify-center xl:justify-start"
+                className="flex-1 flex gap-1 items-center justify-center xl:justify-start"
                 key={index}
               >
                 <CountUp
@@ -27,6 +27,7 @@ const Stats = () => {
                   delay={2}
                   className="text-4xl xl:text-5xl font-extrabold"
                 />
+                <span className="text-2xl font-extrabold mr-2">+</span>
                 <p
                   className={`${
                     item.text.length < 15 ? "max-w-[100px]" : "max-w-[200px]"
