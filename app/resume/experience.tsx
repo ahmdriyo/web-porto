@@ -11,35 +11,63 @@ const experience = {
     "This is my real experience in the world of work, both when collaborating in a team and individually.",
   items: [
     {
+      type: "Freelance",
+      position: "Full-Stack Web Developer",
+      project:
+        "AviationHub - Website providing Aviation information news and aviation ebook sales",
+      description: `
+<div style="padding-left: 10px;">
+  <div>
+    <h2 style="font-weight: 600; color: #0ed145; font-size: 1.1rem; margin-bottom: 4px;">
+      AviationHub
+    </h2>
+    <p>
+      <strong>Description:</strong> Developing a digital platform for aviation e-book sales, blog article management, newsletter services, and admin dashboard management.
+    </p>
+    <p><strong>Responsibilities and Achievements:</strong></p>
+    <ul style="list-style: disc; padding-left: 20px;">
+      <li>Managed end-to-end application development, from requirements planning, project setup, task allocation, implementation, testing, and production deployment.</li>
+      <li>Handled the majority of frontend development using Next.js, TypeScript, Tailwind CSS, and Shadcn UI, and contributed to backend and database integration.</li>
+      <li>Developed features for the e-book catalog, blog, newsletter, authentication, transactions, and user and admin dashboards.</li>
+      <li>Collaborated with backend developers on API development, database management, and asset storage.</li>
+      <li>Handled production configuration, application deployment, domain installation, and bug resolution.</li>
+    </ul>
+    <p>
+      <strong>Technology:</strong> Next.js, TypeScript, Tailwind CSS, Shadcn UI, Supabase, Prisma ORM, Cloudflare R2, REST API, Midtrans
+    </p>
+  </div>
+</div>
+`.trim(),
+      location: "Cilandak, Jakarta, Indonesia",
+      duration: "2026 Apr – 2026 Jun",
+      compeny: "PT Digicorp Teknologi Indonesia",
+    },
+    {
       type: "Internship",
       position: "Full-Stack Web Developer",
       project: "National Civil Servant Assessment System",
       description: `
 <div style="padding-left: 10px;">
-
   <div>
     <h2 style="font-weight: 600; color: #0ed145; font-size: 1.1rem; margin-bottom: 4px;">
-      National-Scale Assessment System Development
+      National Civil Servant Performance Assessment System
     </h2>
-    <p><strong>Description:</strong> Designed, developed, and enhanced a national-scale assessment system for Indonesian Civil Servants, handling complex workflows, multi-role access control, and high data accuracy requirements. Focused on building reliable features, improving usability, and ensuring seamless integration with backend services.</p>
-
-    <p><strong>Achievement:</strong></p>
+    <p>
+      <strong>Description:</strong> Developing a national-level ASN performance assessment web application with a multi-role architecture and access-based verification workflow, including integration of hundreds of internal and external API endpoints for authentication, data synchronization, and notification.
+    </p>
+    <p><strong>Responsibilities and Achievements:</strong></p>
     <ul style="list-style: disc; padding-left: 20px;">
-      <li>Built structured assessment pages aligned with real business rules and governance processes.</li>
-      <li>Implemented verification, approval, and rejection workflows based on role-based permissions.</li>
-      <li>Developed role-based dashboards to improve operational clarity and user efficiency.</li>
-      <li>Created dynamic forms with strong validation to minimize user input errors.</li>
-      <li>Enhanced user experience through responsive loading states, clear status indicators, and improved notification handling.</li>
-      <li>Implemented Excel export functionality for large-scale assessment data.</li>
-      <li>Optimized data validation and management to ensure higher system reliability.</li>
-      <li>Integrated REST APIs and securely managed authentication tokens in collaboration with backend teams.</li>
-      <li>Refactored codebases and standardized component architecture to improve maintainability and scalability.</li>
-      <li>Consistently delivered features on schedule within an agile development environment.</li>
+      <li>Selected as Best of the Best Fullstack Developer from 42 Impact Internship Program participants from various universities in Indonesia.</li>
+      <li>Set up project structure and application development standards.</li>
+      <li>Develop dashboards and assessment pages for 9 out of 11 user roles.</li>
+      <li>Implement assessment, verification, and approval workflows in accordance with business rules.</li>
+      <li>Integrate APIs for authentication, data synchronization, and real-time notifications.</li>
+      <li>Refactor code and standardize components to maintain maintainability and scalability.</li>
     </ul>
-
-    <p><strong>Technologies:</strong> Astro, React.js, Tanstack Query, TypeScript, Shadcn, Golang, Tailwind CSS</p>
+    <p>
+      <strong>Technology:</strong> Astro, React.js, TypeScript, Tailwind CSS, Tanstack Query, Golang, REST API
+    </p>
   </div>
-
 </div>
 `.trim(),
       location: "Jakarta Timur, Indonesia",
@@ -47,52 +75,7 @@ const experience = {
       compeny: "PT Indi Teknokreasi Internasional",
     },
     {
-      type: "Internship",
-      position: "Full-Stack Web Developer",
-      project:
-        "ACP Website Application,KPI Website Application, Attendance System on Islamic Boarding School ",
-      description: `
-        <div style="padding-left: 10px;">
-          <div >
-            <h2 style="font-weight: 600; color: #0ed145; font-size: 1.1rem; margin-bottom: 4px;">ACP Website Application Development</h2>
-            <p><strong>Description:</strong> Developing features for companies engaged in road construction, especially asphalt material management.</p>
-            <p><strong>Achievement:</strong></p>
-            <ul style="list-style: disc; padding-left: 20px;">
-              <li>Create a calculator feature to calculate asphalt material requirements efficiently.</li>
-              <li>Convert web applications to mobile applications using Capacitor to improve user accessibility.</li>
-            </ul>
-            <p><strong>Technologies:</strong> React.js (TypeScript), Tailwind CSS, Capacitor</p>
-          </div>
-
-          <div style="margin-top: 12px">
-            <h4 style="font-weight: 600;  color: #0ed145; font-size: 1.1rem; margin-bottom: 4px;">Development of Assessment Features on the KPI Website</h4>
-            <p><strong>Description:</strong> Adding student assessment features to the attendance and assessment management system used by vocational schools in Banjarbaru.</p>
-            <p><strong>Achievement:</strong></p>
-            <ul style="list-style: disc; padding-left: 20px;">
-              <li>Building features to manage and display student grades dynamically.</li>
-              <li>Integrating backend to store assessment data securely using Golang and MySQL.</li>
-            </ul>
-            <p><strong>Technologies:</strong> React.js (TypeScript), Golang, MySQL</p>
-          </div>
-
-          <div style="margin-top: 12px">
-            <h4 style="font-weight: 600;  color: #0ed145; font-size: 1.1rem; margin-bottom: 4px;">Improvement of Attendance System on Islamic Boarding School Website</h4>
-            <p><strong>Description:</strong> Making improvements to the attendance system used by one of the Islamic boarding schools in Banjarbaru.</p>
-            <p><strong>Achievement:</strong></p>
-            <ul style="list-style: disc; padding-left: 20px;">
-              <li>Improve the appearance of attendance results to make them more informative and easier for users to understand.</li>
-              <li>Addressed the issue of student photo profiles not appearing by fixing the backend and frontend logic.</li>
-            </ul>
-            <p><strong>Technologies:</strong> React.js (TypeScript), Golang, MySQL</p>
-          </div>
-        </div>
-      `.trim(),
-      location: "Banjarbaru, Indonesia",
-      duration: "2024 Oct - 2024 Nov",
-      compeny: "Cv. Tarkiz Paz Banua",
-    },
-    {
-      type: "Freelance ",
+      type: "Freelance",
       position: "Front-End Developer",
       project: "Dacapo",
       description: `
@@ -115,6 +98,49 @@ const experience = {
       location: "South Korea",
       duration: "2025 Jan - 2025 Juni",
       compeny: "PT. Healstation Indonesia",
+    },
+    {
+      type: "Internship",
+      position: "Full-Stack Web Developer",
+      project:
+        "ACP Website Application,KPI Website Application, Attendance System on Islamic Boarding School ",
+      description: `
+        <div style="padding-left: 10px;">
+          <div >
+            <h2 style="font-weight: 600; color: #0ed145; font-size: 1.1rem; margin-bottom: 4px;">ACP Website Application Development</h2>
+            <p><strong>Description:</strong> Developing features for companies engaged in road construction, especially asphalt material management.</p>
+            <p><strong>Achievement:</strong></p>
+            <ul style="list-style: disc; padding-left: 20px;">
+              <li>Create a calculator feature to calculate asphalt material requirements efficiently.</li>
+              <li>Convert web applications to mobile applications using Capacitor to improve user accessibility.</li>
+            </ul>
+            <p><strong>Technologies:</strong> React.js (TypeScript), Tailwind CSS, Capacitor</p>
+          </div>
+          <div style="margin-top: 12px">
+            <h4 style="font-weight: 600;  color: #0ed145; font-size: 1.1rem; margin-bottom: 4px;">Development of Assessment Features on the KPI Website</h4>
+            <p><strong>Description:</strong> Adding student assessment features to the attendance and assessment management system used by vocational schools in Banjarbaru.</p>
+            <p><strong>Achievement:</strong></p>
+            <ul style="list-style: disc; padding-left: 20px;">
+              <li>Building features to manage and display student grades dynamically.</li>
+              <li>Integrating backend to store assessment data securely using Golang and MySQL.</li>
+            </ul>
+            <p><strong>Technologies:</strong> React.js (TypeScript), Golang, MySQL</p>
+          </div>
+          <div style="margin-top: 12px">
+            <h4 style="font-weight: 600;  color: #0ed145; font-size: 1.1rem; margin-bottom: 4px;">Improvement of Attendance System on Islamic Boarding School Website</h4>
+            <p><strong>Description:</strong> Making improvements to the attendance system used by one of the Islamic boarding schools in Banjarbaru.</p>
+            <p><strong>Achievement:</strong></p>
+            <ul style="list-style: disc; padding-left: 20px;">
+              <li>Improve the appearance of attendance results to make them more informative and easier for users to understand.</li>
+              <li>Addressed the issue of student photo profiles not appearing by fixing the backend and frontend logic.</li>
+            </ul>
+            <p><strong>Technologies:</strong> React.js (TypeScript), Golang, MySQL</p>
+          </div>
+        </div>
+      `.trim(),
+      location: "Banjarbaru, Indonesia",
+      duration: "2024 Oct - 2024 Nov",
+      compeny: "Cv. Tarkiz Paz Banua",
     },
     {
       type: "Freelance ",
