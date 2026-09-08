@@ -11,7 +11,7 @@ import { FiDownload } from 'react-icons/fi'
 const HomePage = () => {
   return (
     <div>
-      <div className=" container mx-auto h-full pt-20 mt-[-110px]">
+      <div className=" container mx-auto h-full pt-28 md:pt-32">
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
           <div className="text-center xl:text-left order-2 xl:order-none">
             <TextMotion />

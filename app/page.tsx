@@ -8,19 +8,19 @@ import Footer from "./footer";
 const Home = () => {
   return (
     <section className="h-full">
-      <section id="home">
+      <section id="home" className="scroll-mt-[72px]">
         <HomePage />
       </section>
-      <section id="skills">
+      <section id="skills" className="scroll-mt-[72px]">
         <SkillPage />
       </section>
-      <section id="resume">
+      <section id="resume" className="scroll-mt-[72px]">
         <ResumePage />
       </section>
-      <section id="projects">
+      <section id="projects" className="scroll-mt-[72px]">
         <ProjectPage />
       </section>
-      <section id="contact">
+      <section id="contact" className="scroll-mt-[72px]">
         <ContactPage />
       </section>
       <section id="footer">
