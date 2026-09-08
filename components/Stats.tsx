@@ -6,7 +6,7 @@ const stats = [
     text: "Years Journey as a Software Developer",
   },
   {
-    num: 16,
+    num: 18,
     text: "Independent & Real project completed",
   },
 ];

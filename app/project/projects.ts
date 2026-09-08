@@ -42,6 +42,67 @@ export const projects = [
   },
   {
     category: "Web App",
+    title: "CleanForge",
+    description:
+      "CleanForge is a professional cleaning service platform that connects customers with reliable cleaning solutions for homes and offices. The website features service catalogs, online booking, pricing information, and customer testimonials with a clean and trustworthy user interface.",
+    stack: [
+      { name: "Next.js" },
+      { name: "TypeScript" },
+      { name: "Tailwind CSS" },
+      { name: "Prisma" },
+      { name: "Supabase" },
+    ],
+    image: "/assets/project/cleanforge.png",
+    demo: "https://cleanforge-55907076747.asia-southeast2.run.app/  ",
+  },
+  {
+    category: "Web App",
+    title: "Wonderful Derawan",
+    description:
+      "Wonderful Derawan is a tourism promotion website dedicated to showcasing the natural beauty of Derawan Islands. The platform presents destination highlights, tour packages, accommodations, and travel information with immersive visuals and interactive maps to inspire travelers to explore the islands.",
+    stack: [
+      { name: "Next.js" },
+      { name: "TypeScript" },
+      { name: "Tailwind CSS" },
+      { name: "Leaflet" },
+      { name: "Framer Motion" },
+    ],
+    image: "/assets/project/derawan.png",
+    demo: "https://www.wonderfulderawan.com/",
+  },
+  {
+    category: "Web App",
+    title: "Arka Studio",
+    description:
+      "Arka Studio is a modern architecture and interior studio website showcasing services, and studio profile with elegant, minimalist design. The platform highlights project galleries, team information, and client collaboration features to strengthen the studio's digital presence and branding.",
+    stack: [
+      { name: "Next.js" },
+      { name: "TypeScript" },
+      { name: "Tailwind CSS" },
+      { name: "Framer Motion" },
+      { name: "shadcn" },
+    ],
+    image: "/assets/project/arka-studio.png",
+    demo: "https://arka-studio.tech/",
+  },
+  {
+    category: "Web App",
+    title: "Bot Sales AI",
+    description:
+      "Bot Sales AI is an AI-powered sales assistant platform designed to automate customer interaction, lead qualification, and sales conversion. Integrated with LLM and real-time chat capabilities, it helps businesses increase efficiency in handling inquiries and closing sales automatically.",
+    stack: [
+      { name: "Next.js" },
+      { name: "TypeScript" },
+      { name: "Tailwind CSS" },
+      { name: "AI / LLM" },
+      { name: "Prisma" },
+      { name: "Supabase" },
+    ],
+    image: "/assets/project/bot-sales-ai.png",
+    demo: "https://dashboard.arka-studio.tech/",
+  },
+  {
+    category: "Web App",
     title: "Showroom Kita – Car Showroom themed with AI Assistant",
     description:
       "Our Showroom is a web-based car showroom application that provides detailed information on various vehicle models, specifications, and prices. The platform allows users to browse various car categories, view images, access comprehensive details, and use AI Assistant features to help make informed purchasing decisions. The application uses Google Sheets as a database to store and manage showroom and vehicle data.",
