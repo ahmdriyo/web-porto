@@ -1,14 +1,12 @@
 "use client";
 import { motion } from "framer-motion";
-import {  TabsContent } from "@/components/ui/tabs";
-;
+import { TabsContent } from "@/components/ui/tabs";
 import { ScrollArea } from "@/components/ui/scroll-area";
 
 const education = {
   icon: "/assets/profile.png",
   title: "My Education",
-  description:
-    "This is my education history.",
+  description: "This is my education history.",
   items: [
     {
       institution: "SMAN 1 ALALAK",
@@ -18,7 +16,8 @@ const education = {
     {
       institution: "UNISKA MAB",
       study: "TEKNIK INFORMATIKA",
-      duration: "2022 - ongoing",
+      duration: "2022 - 2026",
+      gpa: "IPK 3.82",
     },
   ],
 };
@@ -46,7 +45,9 @@ const EducationTabsContent = () => {
   return (
     <TabsContent className=" w-full" value="education">
       <div className="flex flex-col gap-[30px] text-center xl:text-left">
-        <h3 className="text-4xl font-extrabold text-accent drop-shadow-lg">{education.title}</h3>
+        <h3 className="text-4xl font-extrabold text-accent drop-shadow-lg">
+          {education.title}
+        </h3>
         <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
           {education.description}
         </p>
@@ -61,7 +62,10 @@ const EducationTabsContent = () => {
           {education.items.map((item, index) => {
             return (
               <motion.li
-                whileHover={{ rotate: 3, boxShadow: "0px 10px 30px rgba(0, 0, 0, 0.2)" }}
+                whileHover={{
+                  rotate: 3,
+                  boxShadow: "0px 10px 30px rgba(0, 0, 0, 0.2)",
+                }}
                 transition={{ duration: 0.3 }}
                 key={index}
                 variants={itembar}
@@ -76,6 +80,11 @@ const EducationTabsContent = () => {
                   <span className="w-[6px] h-[6px] rounded-full bg-amber-300"></span>
                   <p className=" text-white/60">{item.study}</p>
                 </div>
+                {(item as any).gpa && (
+                  <p className="text-sm font-semibold text-accent mt-1">
+                    {(item as any).gpa}
+                  </p>
+                )}
               </motion.li>
             );
           })}
