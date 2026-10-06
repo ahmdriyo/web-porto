@@ -21,13 +21,13 @@ const services = [
   },
   {
     num: "03",
-    title: "AI Engineering",
+    title: "AI Engineer",
     description:
       "Capable of integrating AI capabilities, Large Language Models (LLMs), and intelligent API workflows into modern applications to drive innovation and automation.",
-    icon: <FaBrain className="text-primary text-3xl" />,
+    icon: <BsStars className="text-primary text-3xl" />,
   },
   {
-    num: "044",
+    num: "04",
     title: "UI/UX",
     description:
       "Able to design clean and user-focused interfaces using Figma and Canva to enhance product usability.",
@@ -37,7 +37,8 @@ const services = [
 
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { FaBrain, FaServer } from "react-icons/fa";
+import { FaServer } from "react-icons/fa";
+import { BsStars } from "react-icons/bs";
 const SkillPage = () => {
   const controls = useAnimation();
   const [ref, inView] = useInView({
