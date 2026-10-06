@@ -9,7 +9,7 @@ const services = [
     num: "01",
     title: "Full Stack Developer",
     description:
-      "Experienced in building modern web applications using HTML5, CSS3, SCSS, JavaScript, TypeScript, React, Next.js, Node.js, NestJS, Express, Laravel, Tailwind CSS, and API integration.",
+      "Experienced in building modern web applications using HTML5, CSS3, SCSS, Tailwind CSS, JavaScript, TypeScript, React, Next.js, Vue.js, Astro, NestJS, Hono JS, Express, Go, Laravel, and API integration.",
     icon: <IoIosDesktop className="text-primary text-3xl" />,
   },
   {
@@ -21,6 +21,13 @@ const services = [
   },
   {
     num: "03",
+    title: "AI Engineering",
+    description:
+      "Capable of integrating AI capabilities, Large Language Models (LLMs), and intelligent API workflows into modern applications to drive innovation and automation.",
+    icon: <FaBrain className="text-primary text-3xl" />,
+  },
+  {
+    num: "044",
     title: "UI/UX",
     description:
       "Able to design clean and user-focused interfaces using Figma and Canva to enhance product usability.",
@@ -30,7 +37,7 @@ const services = [
 
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { FaServer } from "react-icons/fa";
+import { FaBrain, FaServer } from "react-icons/fa";
 const SkillPage = () => {
   const controls = useAnimation();
   const [ref, inView] = useInView({

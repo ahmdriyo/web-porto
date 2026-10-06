@@ -12,12 +12,13 @@ const TextDetail = () => {
     >
       <span className="text-xl">Full Stack Developer</span>
       <p className="max-w-[500px] mb-9 text-white/80">
-        I am an Informatics Engineering student and a Full Stack Developer with
-        experience in frontend and backend development. I specialize in building
-        intuitive user interfaces, developing scalable server-side systems, and
-        applying DevOps practices to deliver reliable and efficient
-        applications. I continuously improve my skills through real-world
-        projects{" "}
+        I am a Full Stack Developer with 2+ years of experience delivering
+        end-to-end web applications across both professional and freelance
+        environments. With a Bachelor's degree in Informatics Engineering, my
+        expertise spans frontend and backend engineering, DevOps workflows, and
+        AI integration. I focus on translating business requirements into
+        scalable, practical solutions while ensuring smooth deployment and
+        production reliability.{" "}
       </p>
     </motion.section>
   );
