@@ -73,7 +73,7 @@ const Navbar = () => {
           className="group flex items-center gap-2 shrink-0"
         >
           <span className="text-[18px] md:text-[20px] font-bold tracking-tight text-white">
-            Ahmad<span className="text-accent">.</span>Riyo
+            ahmd_riyo
           </span>
         </a>
 
