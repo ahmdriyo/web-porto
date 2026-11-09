@@ -17,7 +17,6 @@ export const projects = [
       { name: "Ckeditor" },
     ],
     image: "/assets/project/dacapo.png",
-    demo: "https://flydacapo.com/",
   },
   {
     category: "Web App",
@@ -285,23 +284,6 @@ export const projects = [
     ],
     image: "/assets/project/Mahakreatif.png",
     github: "https://github.com/ahmdriyo/Fullstack-MahaKreatif",
-    demo: "https://www.mahakreatif-studio.com/",
-  },
-  {
-    category: "Web App",
-    title: "Company Profile",
-    description:
-      "This company profile website was developed using Copilot Agent from GitHub, where 90% of the code was written by Ai from AI prompts in less than 1 hour. Manual adjustments were made to adjust the design and content. This website is open-source and free to be developed according to your needs.",
-    stack: [
-      { name: "Next js" },
-      { name: "Tailwind" },
-      { name: "Typescript" },
-      { name: "Antd" },
-      { name: "Framer Motion" },
-    ],
-    image: "/assets/project/company-profile.png",
-    github: "https://github.com/ahmdriyo/company-profile",
-    demo: "https://company-profile-dummy.vercel.app/",
   },
   {
     category: "Web App",
