@@ -54,7 +54,7 @@ export const projects = [
       { name: "Genai" },
     ],
     image: "/assets/project/cleanforge.png",
-    demo: "https://cleanforge-55907076747.asia-southeast2.run.app/  ",
+    demo: "https://clean-forge-eta.vercel.app/",
   },
   {
     category: "Web App",
